@@ -8,8 +8,8 @@ import Link from 'next/link';
 import AboutUs from './aboutus/AboutUs'
 import ServiceWeOffer from '../servicesweoffer/ServiceWeOffer'
 import Contactus from './contactus/Contactus'
-import TestimonialStepper from '../servicesweoffer/testnomials/TestimonialStepper'
-
+import TestimonialStepper from '../servicesweoffer/testnomials/TestimonialStepper';
+import AchievementsCarousel from '../achievements/AchievementsCarousel';
 
 export default function Home() {
   return (
@@ -21,6 +21,7 @@ export default function Home() {
       <Contactus/>
 
       <TestimonialStepper/>
+      <AchievementsCarousel/>
      
     </main>
   )
