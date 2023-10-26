@@ -8,7 +8,7 @@ import Link from 'next/link';
 import AboutUs from './aboutus/AboutUs'
 import ServiceWeOffer from '../servicesweoffer/ServiceWeOffer'
 import Contactus from './contactus/Contactus'
-
+import TestimonialStepper from '../servicesweoffer/testnomials/TestimonialStepper'
 
 
 export default function Home() {
@@ -19,6 +19,8 @@ export default function Home() {
       <ServiceWeOffer/>
       {/* <TextAnimation /> */}
       <Contactus/>
+
+      <TestimonialStepper/>
      
     </main>
   )
