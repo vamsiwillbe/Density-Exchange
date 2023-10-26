@@ -12,14 +12,14 @@ import { Typography } from '@mui/material'
         },
         {
             heading:'SDE sheet',
-            content:'Top SDE sheets are provided to practice interview questions '
+            content:'Top SDE sheets for practice interview questions '
         },
         {
             heading:'Progress tracking',
-            content:'student progress assisted in a systematic manner'
+            content:'student progress assisted in systematic manner'
         },
         {
-            heading:'opportunity notification ',
+            heading:'opportunity Alerts ',
             content:'student can notified all the opportunities and events'
         },
         {
@@ -29,7 +29,9 @@ import { Typography } from '@mui/material'
     ]
   return (
     <>
-        <Typography >srvices we Offeer</Typography>
+         <Typography variant="h4" style={{ fontWeight: 'bold', padding: '20px' }}>
+        Services we offer  :
+      </Typography>
         <CardOfServices CardsData={CardsData}/>
     </>
   )
