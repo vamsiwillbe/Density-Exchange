@@ -10,8 +10,15 @@ const CardOfServices = ({CardsData}) => {
     {
     CardsData.map((item ,index)=>{
         return (
-            <Card style={{width:'300px',height:'200px',padding:'10px',backgroundColor:index%2==0?'#FFEFD5':'#EEEBFE'}}>
-            <Typography variant='h5'>{item?.heading}</Typography>
+          <Card
+          style={{
+            width: '350px', // Increase the width to your preferred size
+            height: '250px', // Increase the height to your preferred size
+            padding: '10px',
+            backgroundColor: index % 2 === 0 ? '#FFEFD5' : '#EEEBFE',
+          }}
+        >
+            <Typography variant='h5' style={{ fontWeight: 'bold' }}>{item?.heading}</Typography>
             <Typography variant='h6'>{item?.content}</Typography>
             
             </Card>

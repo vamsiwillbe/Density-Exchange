@@ -1,27 +1,37 @@
 import React from 'react'
 
+
 import CardOfServices from './CardOfServices'
+import { Typography } from '@mui/material'
 
  const ServiceWeOffer = () => {
     const CardsData=[
         {
-            heading:'Anil',
-            content:'anillllllllll'
+            heading:'Mentorship',
+            content:'student is assigned with top tech  mentors'
         },
         {
-            heading:'prakash',
-            content:'kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk'
+            heading:'SDE sheet',
+            content:'Top SDE sheets are provided to practice interview questions '
         },
         {
-            heading:'prakash',
-            content:'kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk'
-        }
+            heading:'Progress tracking',
+            content:'student progress assisted in a systematic manner'
+        },
+        {
+            heading:'opportunity notification ',
+            content:'student can notified all the opportunities and events'
+        },
+        {
+            heading:'Online IDEs ',
+            content:'we can compile and run programs easily'
+        },
     ]
   return (
-    <div>
-
+    <>
+        <Typography >srvices we Offeer</Typography>
         <CardOfServices CardsData={CardsData}/>
-    </div>
+    </>
   )
 }
 
