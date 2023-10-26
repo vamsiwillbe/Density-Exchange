@@ -3,7 +3,9 @@ import { Grid, Card, Typography } from '@mui/material';
 import gsap from 'gsap';
 
 const CardOfServices = ({ CardsData }) => {
-  const cardRefs = useRef([]); // Create a ref to store card elements
+  const cardRefs = useRef([]); 
+  
+  // Create a ref to store card elements
 
   // Define the animation function
   const animateCards = () => {
@@ -12,10 +14,10 @@ const CardOfServices = ({ CardsData }) => {
     // Loop through card elements and apply animations
     cardRefs.current.forEach((card, index) => {
       tl.from(card, {
-        opacity: 0,
+        opacity: 1,
         y: 30,
         duration: 0.5,
-        ease: 'power3.out',
+        ease: 'power10.out',
         delay: index * 0.2, // Stagger the animations
       });
     });
