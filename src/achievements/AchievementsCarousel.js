@@ -4,11 +4,11 @@ import { Code, Group, Speed, SportsEsports, Star } from '@mui/icons-material';
 import gsap from 'gsap';
 
 const achievements = [
-  { icon: <Star />, title: 'Collaboration Ace', description: 'Collaborated closely with Beyond Basic’s development team, contributing to a 25% acceleration in project timelines.' },
-  { icon: <Code />, title: 'Educational Innovator', description: 'Developed an educational website aiding students in mastering Data Structures, Algorithms, and the latest technologies, attracting over 10,000 monthly users.' },
+  { icon: <Star />, title: 'Collaboration Accelerator', description: 'Collaborated closely with Beyond Basic’s development team, contributing to a 25% acceleration in project timelines.' },
+  { icon: <Code />, title: 'Educational Impact', description: 'Developed an educational website aiding students in mastering Data Structures, Algorithms, and the latest technologies, attracting over 10,000 monthly users.' },
   { icon: <Group />, title: 'User-Centric Visionary', description: 'Analyzed user needs and proposed product features, resulting in a 20% increase in user satisfaction.' },
   { icon: <Speed />, title: 'Efficiency Maestro', description: 'Successfully led the front-end team, improving team efficiency by 15% through streamlined processes and regular training programs.' },
-  { icon: <SportsEsports />, title: 'Hackathon Enthusiast', description: 'Organized and facilitated Hackathons, attracting participation from 1000 students.' },
+  { icon: <SportsEsports />, title: 'Hackathon Enthusiast', description: 'Organized and facilitated Hackathons, attracting participation from 1000 students.' },
 ];
 
 const AchievementsCarousel = () => {
