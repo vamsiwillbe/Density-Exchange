@@ -4,7 +4,7 @@ import './About.css';
 const AboutUs = () => {
   return (
     <>
-    <Grid  style={{height:'500px',backgroundColor:'#EEEBFE',padding:'10px'}} container alignItems="center" justifyContent="center">
+    <Grid  style={{height:'500px',backgroundImage: 'url("stepper.avif")',padding:'10px'}} container alignItems="center" justifyContent="center">
 
         <Grid xs={12} md={6} lg={6} item>
         <div className="about-container">

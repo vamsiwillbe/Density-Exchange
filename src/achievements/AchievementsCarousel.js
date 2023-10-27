@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react';
 import { Card, CardContent, Typography, Grid, Container } from '@mui/material';
-import { Star, ThumbUp, EmojiEvents, SportsSoccer, EmojiPeople } from '@mui/icons-material';
+import { Code, Group, Speed, SportsEsports, Star } from '@mui/icons-material';
 import gsap from 'gsap';
 
 const achievements = [
-  { icon: <Star />, title: 'Star Achiever', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-  { icon: <ThumbUp />, title: 'Thumb Up Champion', description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' },
-  { icon: <EmojiEvents />, title: 'Event Expert', description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco.' },
-  { icon: <SportsSoccer />, title: 'Sports Enthusiast', description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse.' },
-  { icon: <EmojiPeople />, title: 'Community Leader', description: 'Excepteur sint occaecat cupidatat non proident.' },
+  { icon: <Star />, title: 'Collaboration Ace', description: 'Collaborated closely with Beyond Basic’s development team, contributing to a 25% acceleration in project timelines.' },
+  { icon: <Code />, title: 'Educational Innovator', description: 'Developed an educational website aiding students in mastering Data Structures, Algorithms, and the latest technologies, attracting over 10,000 monthly users.' },
+  { icon: <Group />, title: 'User-Centric Visionary', description: 'Analyzed user needs and proposed product features, resulting in a 20% increase in user satisfaction.' },
+  { icon: <Speed />, title: 'Efficiency Maestro', description: 'Successfully led the front-end team, improving team efficiency by 15% through streamlined processes and regular training programs.' },
+  { icon: <SportsEsports />, title: 'Hackathon Enthusiast', description: 'Organized and facilitated Hackathons, attracting participation from 1000 students.' },
 ];
 
 const AchievementsCarousel = () => {
@@ -27,13 +27,17 @@ const AchievementsCarousel = () => {
   }, []);
 
   return (
-    <Container style={{ overflow: 'hidden' }}>
-      <Grid container spacing={3} justifyContent="center" style={{ marginBottom: '30px' }} className="cards-container">
+    <>
+    <Typography variant="h4" style={{ fontWeight: 'bold', padding: '20px' }}>
+       Our Achiments :
+      </Typography> 
+    <Container style={{ overflow: 'hidden' , backgroundImage: 'url("contactus.jpg")',borderRadius: '10px'}}>
+      <Grid container spacing={3} justifyContent="center" style={{ backgroundImage: 'url("contactus.jpg")', marginBottom: '30px' }} className="cards-container">
         {achievements.map((achievement, index) => (
-          <Grid item key={index} xs={12} sm={6} md={4} style={{ minWidth: '350px' }}>
+          <Grid item key={index} xs={12} sm={6} md={4} style={{ minWidth: '350px',paddingTop:'50px' }}>
             <Card style={{ height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', borderRadius: '10px', backgroundColor: index % 2 === 0 ? '#FFD700' : '#FF6347' }}>
-              <CardContent>
-                <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '16px' }}>
+              <CardContent >
+                <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '16px' ,paddingTop:'40px'}}>
                   {achievement.icon}
                 </div>
                 <Typography variant="h5" component="div" textAlign="center" gutterBottom>
@@ -48,6 +52,7 @@ const AchievementsCarousel = () => {
         ))}
       </Grid>
     </Container>
+    </>
   );
 };
 

@@ -1,0 +1,1971 @@
+<!DOCTYPE html>
+<html lang="en" data-grid-columns="3" data-color-scheme="preference">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>11+ Best Online Resources to Learn Web Development</title>
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="manifest" href="/manifest.webmanifest">
+  <meta name="theme-color" content="#f95913">
+  <link rel="apple-touch-icon" href="/assets/icon-192x192.png?v=0337832957">
+
+  <link rel="preload" href="/assets/dist/app.min.js?v=0337832957" as="script">
+  <link rel="preload" href="/assets/dist/app.min.css?v=0337832957" as="style">
+  <link rel="preload stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800&display=swap" as="style"
+    onload="this.onload=null;this.rel='stylesheet'" crossorigin>
+
+
+  <script async src="/assets/dist/app.min.js?v=0337832957"></script>
+
+  <link rel="stylesheet" type="text/css" href="/assets/dist/app.min.css?v=0337832957" />
+
+  <!--cssential-->
+  <style>
+
+  </style>
+  <!--/cssential-->
+
+  <script>
+  // Basic Config
+  let CONFIG = {
+    /* Replace it with your domain: ghost_host: 'https://yoursite.domain' */
+    GHOST_URL: 'https://startuptalky.com', 
+    
+    /* Settings > Integrations > New Custom Integration. Copy Key. Replace GHOST_KEY below. */
+    GHOST_KEY: '48aedfead6eb3dcbedaa7a4afd', 
+
+    /* Search result limit */
+    GHOST_SEARCH_LIMIT: 5,
+
+    /* Default view of posts: list/grid. */
+    DEFAULT_VIEW_TYPE: 'grid',
+
+    /* Nr of columns for post cards. Possible values 2 or 3. */
+    DEFAULT_GRID_COLUMNS: 3,
+
+    /* Default Color Scheme. Values: preference(detects user setting), light, dark. */
+    DEFAULT_COLOR_SCHEME: 'light',
+
+    /* Enable Color cheme picker */
+    ENABLE_COLOR_SCHEME_PICKER: false,
+
+    /* Enable lightbox for post images */
+    ENABLE_IMAGE_LIGHTBOX: false,
+
+    /* Enable Scroll Top Button */
+    ENABLE_SCROLL_TO_TOP: true,
+
+    /* Enable filter feature on homepage */
+    ENABLE_FILTER: false,
+
+    /* Enable hyphens */
+    ENABLE_HYPHENS: false,
+
+    /* Enable PWA - Progressive Web App */
+    ENABLE_PWA: true,
+
+    /* Enable Sticky Header */
+    ENABLE_STICKY_HEADER: true,
+
+    /* Replace 'biron-demo' with your disqus account shortname */
+    DISQUS_SHORTNAME: 'biron-demo',
+
+    /* To use Cove, replace the below id with your cove publication id*/
+    COVE_ID: '9a56f94608ec8169ab6bb801d004f591' 
+  }
+
+  // Color schemes, you can either modify the existing ones or add new ones
+  const COLOR_SCHEMES = [
+    {
+      "id": "light",
+      "name": "Light",
+      "colors": {
+        "primary": " hsl(18.3,95%,52.5%)",
+        "primary_dark": " hsl(18.3,95%,52.5%)",
+        "primary_light": " hsl(18.3,95%,52.5%)",
+        "secondary": "hsl(20, 92%, 60%)",
+        "secondary_dark": "hsl(20, 92%, 63%)",
+        "secondary_light": "hsl(20, 92%, 57%)",
+        "text": "hsl(0, 0%, 10%)",
+        "text_acc_1": "hsl(0, 0%, 20%)",
+        "text_acc_2": "hsl(0, 0%, 30%)",
+        "text_acc_3": "hsl(0, 0%, 40%)",
+        "text_reverse": "hsl(0, 0%, 90%)",
+        "bg": "hsl(0, 100%, 100%)",
+        "bg_body": "hsl(219,23%,97%)",
+        "bg_acc_1": "hsl(0, 0%, 98%)",
+        "bg_acc_2": "hsl(0, 0%, 96%)",
+        "bg_acc_3": "hsl(0, 0%, 94%)",
+        "bg_reverse": "hsl(0, 0%, 10%)",
+        "neutral": "hsl(0, 0%, 50%)",
+        "border": "hsl(0, 0%, 95%)"
+      }
+    },
+    {
+      "id": "dark",
+      "name": "Dark",
+      "colors": {
+        "primary": "hsl(253,91%,64%)",
+        "primary_dark": "hsl(253,91%,67%)",
+        "primary_light": "hsl(253,91%,61%)",
+        "secondary": "hsl(20, 92%, 60%)",
+        "secondary_dark": "hsl(20, 92%, 63%)",
+        "secondary_light": "hsl(20, 92%, 57%)",
+        "text": "hsl(0, 0%, 90%)",
+        "text_acc_1": "hsl(0, 0%, 80%)",
+        "text_acc_2": "hsl(0, 0%, 70%)",
+        "text_acc_3": "hsl(0, 0%, 60%)",
+        "text_reverse": "hsl(0, 0%, 10%)",
+        "bg": "hsl(0, 0%, 8%)",
+        "bg_body": "hsl(0, 0%, 3%)",
+        "bg_acc_1": "hsl(0, 0%, 10%)",
+        "bg_acc_2": "hsl(0, 0%, 12%)",
+        "bg_acc_3": "hsl(0, 0%, 15%)",
+        "bg_reverse": "hsl(0, 0%, 90%)",
+        "neutral": "hsl(0, 0%, 50%)",
+        "border": "hsl(0, 0%, 15%)"
+      }
+    }, 
+    {
+      "id": "whitesmoke",
+      "name": "Whitesmoke",
+      "colors": {
+        "primary": "hsl(354, 81%, 65%)",
+        "primary_dark": "hsl(354, 81%, 62%)",
+        "primary_light": "hsl(354, 81%, 68%)",
+        "secondary": "hsl(185, 54%, 45%)",
+        "secondary_dark": "hsl(185, 54%, 42%)",
+        "secondary_light": "hsl(185, 54%, 48%)",
+        "text": "hsl(34, 36%, 10%)",
+        "text_acc_1": "hsl(34, 36%, 20%)",
+        "text_acc_2": "hsl(34, 36%, 30%)",
+        "text_acc_3": "hsl(34, 36%, 40%)",
+        "text_reverse": "hsl(34, 36%, 90%)",
+        "bg": "hsl(34, 36%, 96%)",
+        "bg_body": "hsl(34, 36%, 93%)",
+        "bg_acc_1": "hsl(34, 36%, 90%)",
+        "bg_acc_2": "hsl(34, 36%, 88%)",
+        "bg_acc_3": "hsl(34, 36%, 85%)",
+        "bg_reverse": "hsl(34, 36%, 10%)",
+        "neutral": "hsl(34, 36%, 50%)",
+        "border": "hsl(34, 36%, 85%)"
+      }
+    }, 
+    {
+      "id": "midnight",
+      "name": "Midnight",
+      "colors": {
+        "primary": "hsl(309, 52%, 50%)",
+        "primary_dark": "hsl(309, 52%, 47%)",
+        "primary_light": "hsl(309, 52%, 53%)",
+        "secondary": "hsl(56, 88%, 60%)",
+        "secondary_dark": "hsl(56, 88%, 57%)",
+        "secondary_light": "hsl(56, 88%, 63%)",
+        "text": "hsl(250, 63%, 90%)",
+        "text_acc_1": "hsl(250, 63%, 85%)",
+        "text_acc_2": "hsl(250, 63%, 80%)",
+        "text_acc_3": "hsl(250, 63%, 75%)",
+        "text_reverse": "hsl(250, 63%, 10%)",
+        "bg": "hsl(250, 63%, 10%)",
+        "bg_body": "hsl(250, 63%, 5%)",
+        "bg_acc_1": "hsl(250, 63%, 15%)",
+        "bg_acc_2": "hsl(250, 63%, 20%)",
+        "bg_acc_3": "hsl(250, 63%, 25%)",
+        "bg_reverse": "hsl(250, 63%, 90%)",
+        "neutral": "hsl(250, 63%, 50%)",
+        "border": "hsl(250, 63%, 23%)"
+      }
+    } 
+  ];
+</script>
+
+  <script>
+  // Dark/Light Theme Handling
+  let preferredTheme; 
+  if (CONFIG.DEFAULT_COLOR_SCHEME === 'preference') {
+    const preferredColorScheme = 
+    ( window.matchMedia 
+      && window.matchMedia('(prefers-color-scheme: dark)').matches
+    ) 
+    ? 'dark' 
+    : 'light'
+    preferredTheme = localStorage.getItem('USER_COLOR_SCHEME') || preferredColorScheme;
+  } else {
+    preferredTheme = localStorage.getItem('USER_COLOR_SCHEME') || CONFIG.DEFAULT_COLOR_SCHEME;
+  }
+  document.documentElement.setAttribute('data-color-scheme', preferredTheme);
+
+  // Grid/List View Handling
+  let preferredView = localStorage.getItem('USER_VIEW_TYPE') || CONFIG.DEFAULT_VIEW_TYPE;
+  document.documentElement.setAttribute('data-view-type', preferredView);
+
+  // Grid columns setting
+  document.documentElement.setAttribute('data-grid-columns', CONFIG.DEFAULT_GRID_COLUMNS);
+
+  // =========================
+  // Set Hyphens property
+  // =========================
+  const root = document.documentElement;
+  if (CONFIG.ENABLE_HYPHENS) {
+    root.style.setProperty('--global-hyphens', 'auto')
+  }
+
+  // =========================
+  // Set Hyphens property
+  // =========================
+  if (CONFIG.ENABLE_STICKY_HEADER) {
+    //root.style.setProperty('--global-header-position', 'sticky');
+    document.documentElement.setAttribute('data-header', 'sticky');
+  }
+  
+  // Global values needed
+  const GLOBAL = {
+    CURRENT_PAGE: parseInt(''),
+    NEXT_PAGE: parseInt(''),
+    NEXT_PAGE_LINK: '',
+    MAX_PAGES: parseInt(''), 
+    LAST_PAGE: `` === `` ? true : false,
+    POSTS_PER_PAGE: parseInt('14'),
+    ADD_BOOKMARK_MSG: `Saved!`,
+    REMOVE_BOOKMARK_MSG: `Removed!`,
+    API: ''
+  }
+
+  // Set Themes
+  let style = document.createElement('style');
+  style.innerHTML = `
+    ${COLOR_SCHEMES.map(function(theme) { 
+      return `
+        html[data-color-scheme="${theme.id}"], button[data-color-scheme="${theme.id}"] {
+          --color-primary: ${theme.colors.primary};
+          --color-primary-dark: ${theme.colors.primary_dark};
+          --color-primary-light: ${theme.colors.primary_light};
+          --color-secondary: ${theme.colors.secondary};
+          --color-secondary-dark: ${theme.colors.secondary_dark};
+          --color-secondary-light: ${theme.colors.secondary_light};
+
+          --color-text: ${theme.colors.text};
+          --color-text-acc-1: ${theme.colors.text_acc_1};
+          --color-text-acc-2: ${theme.colors.text_acc_2};
+          --color-text-acc-3: ${theme.colors.text_acc_3};
+          --color-text-reverse: ${theme.colors.text_reverse};
+
+          --color-bg-body: ${theme.colors.bg_body};  
+          --color-bg: ${theme.colors.bg}; 
+          --color-bg-acc-1: ${theme.colors.bg_acc_1}; 
+          --color-bg-acc-2: ${theme.colors.bg_acc_2}; 
+          --color-bg-acc-3: ${theme.colors.bg_acc_3}; 
+          --color-bg-reverse: ${theme.colors.bg_reverse};
+
+          --color-neutral: ${theme.colors.neutral}; 
+          --color-border: ${theme.colors.border};
+        }
+        .btn-theme-toggle{display: none}
+      `.replace(/\s+/g,'');
+    }).join(' ')}
+  `
+  document.getElementsByTagName('head')[0].appendChild(style);
+</script>
+  <meta name="description" content="Web development can be expensive. If you are looking for some free resources to get started with web development, there are plenty of them here.">
+    <link rel="icon" href="https://static.startuptalky.com/2022/07/logo_V03--2-.png" type="image/png">
+    <link rel="canonical" href="https://startuptalky.com/learn-web-development-online-resources/">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="amphtml" href="https://startuptalky.com/learn-web-development-online-resources/amp/">
+    
+    <meta property="og:site_name" content="StartupTalky">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="11+ Best Online Resources to Learn Web Development">
+    <meta property="og:description" content="Web development can be expensive. If you are looking for some free resources to get started with web development, there are plenty of them here.">
+    <meta property="og:url" content="https://startuptalky.com/learn-web-development-online-resources/">
+    <meta property="og:image" content="https://static.startuptalky.com/2022/06/Web-Development-startuptalky-.jpg">
+    <meta property="article:published_time" content="2022-06-03T02:30:00.000Z">
+    <meta property="article:modified_time" content="2023-04-16T10:35:23.000Z">
+    <meta property="article:tag" content="Collections 🗒️">
+    <meta property="article:tag" content="web development course online">
+    <meta property="article:tag" content="web development">
+    <meta property="article:tag" content="Web Developer">
+    <meta property="article:tag" content="Front end develpoment">
+    <meta property="article:tag" content="HTML">
+    <meta property="article:tag" content="javascript">
+    <meta property="article:tag" content="CSS">
+    <meta property="article:tag" content="java">
+    <meta property="article:tag" content="python">
+    <meta property="article:tag" content="C++">
+    <meta property="article:tag" content="PHP">
+    <meta property="article:tag" content="Node.JS">
+    <meta property="article:tag" content="freeCodeCamp">
+    <meta property="article:tag" content="DevDocs">
+    <meta property="article:tag" content="Codecademy">
+    <meta property="article:tag" content="Roadmap">
+    <meta property="article:tag" content="Mozilla Developer Network">
+    <meta property="article:tag" content="geeksforgeeks">
+    <meta property="article:tag" content="W3Schools">
+    <meta property="article:tag" content="Odin">
+    <meta property="article:tag" content="Codepen">
+    <meta property="article:tag" content="udemy">
+    <meta property="article:tag" content="youtube">
+    
+    <meta property="article:publisher" content="https://www.facebook.com/startuptalky/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="11+ Best Online Resources to Learn Web Development">
+    <meta name="twitter:description" content="Web development can be expensive. If you are looking for some free resources to get started with web development, there are plenty of them here.">
+    <meta name="twitter:url" content="https://startuptalky.com/learn-web-development-online-resources/">
+    <meta name="twitter:image" content="https://static.startuptalky.com/2022/06/Web-Development-startuptalky-.jpg">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Prakash Mishra">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="Collections 🗒️, web development course online, web development, Web Developer, Front end develpoment, HTML, javascript, CSS, java, python, C++, PHP, Node.JS, freeCodeCamp, DevDocs, Codecademy, Roadmap, Mozilla Developer Network, geeksforgeeks, W3Schools, Odin, Codepen, udemy, youtube">
+    <meta name="twitter:site" content="@StartupTalky">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="675">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "StartupTalky",
+        "url": "https://startuptalky.com/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://static.startuptalky.com/2022/07/StartupTalky_Final_Logo-1.png"
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Prakash Mishra",
+        "url": "https://startuptalky.com/author/prakash/",
+        "sameAs": []
+    },
+    "headline": "11+ Best Online Resources to Learn Web Development",
+    "url": "https://startuptalky.com/learn-web-development-online-resources/",
+    "datePublished": "2022-06-03T02:30:00.000Z",
+    "dateModified": "2023-04-16T10:35:23.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://static.startuptalky.com/2022/06/Web-Development-startuptalky-.jpg",
+        "width": 1200,
+        "height": 675
+    },
+    "keywords": "Collections 🗒️, web development course online, web development, Web Developer, Front end develpoment, HTML, javascript, CSS, java, python, C++, PHP, Node.JS, freeCodeCamp, DevDocs, Codecademy, Roadmap, Mozilla Developer Network, geeksforgeeks, W3Schools, Odin, Codepen, udemy, youtube",
+    "description": "When you start learning a new Programming Language or we can say Web Development\n, you will invariably find yourself wanting to turn to Google and do a search\nfor “free resources to learn Web Development”.\n\nMaybe you are one of those people who just want to start a career as a Web\nDeveloper or you have not thought about it. If you don&#x27;t know about Web\nDevelopment then let me tell you that it is among the highest paying jobs in the\nworld. So, it&#x27;s a great option to become a web developer. \n\nYou c",
+    "mainEntityOfPage": "https://startuptalky.com/learn-web-development-online-resources/"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 5.53">
+    <link rel="alternate" type="application/rss+xml" title="StartupTalky" href="https://startuptalky.com/rss/">
+    
+    <script defer src="https://cdn.jsdelivr.net/ghost/sodo-search@~1.1/umd/sodo-search.min.js" data-key="a0b307481c3fd0d9c60bce6b58" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.1/umd/main.css" data-sodo-search="https://startuptalky.com/" crossorigin="anonymous"></script>
+    
+    <link href="https://startuptalky.com/webmentions/receive/" rel="webmention">
+    <script defer src="/public/cards.min.js?v=0337832957"></script>
+    <link rel="stylesheet" type="text/css" href="/public/cards.min.css?v=0337832957">
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MN965ZD');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KC571ZHCDH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KC571ZHCDH');
+</script>
+
+<!-- bff66c341b4cd9e77c1752a93064a55b74107c11 -->
+
+<meta name='ir-site-verification-token' value='-793629906' /> 
+<style>
+.lazyloading {
+    opacity: 1 !important;
+    filter: none !important;
+}
+</style>
+
+<style>
+.affiliateCard{background:#fff;padding:16px;color:#666;margin-bottom:30px;box-shadow:0 5px 20px rgb(0 0 0 / 10%)}.toolLinksContainer a{color:#f95913}.toolLinksContainer a:hover{color:#fa804b}
+</style>
+
+<style>
+#wfcTextarea_567246 {
+  	width: 308px;
+	height: 80px;
+}
+</style>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6079861242160523"
+     crossorigin="anonymous"></script>
+
+<script src="https://seizelead.com/upload/625efe6560e05_SeizeLead.js" type="text/javascript" charset="utf-8" async defer></script>
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "What is Web Development?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Web Development is the process of creating web pages online and optimizing them for web searches."
+    }
+  },{
+    "@type": "Question",
+    "name": "What are the types of Web Development?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Web Development is classified in two ways i.e.:
+Front-End Development (also known as \"client-side\" application).
+Back-end Development (also known as \"server-side\" application)."
+    }
+  },{
+    "@type": "Question",
+    "name": "What is Front-end development?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Front-end development refers to anything that you see on the page in the browser once it is loaded by the browser."
+    }
+  },{
+    "@type": "Question",
+    "name": "What is Back-end development?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Back-end development is the process of building software that runs on a web server and most often interacts with a database."
+    }
+  }]
+}
+</script><style>:root {--ghost-accent-color: #f95913;}</style>
+</head>
+
+
+<body class="post-template tag-collections tag-web-development-course-online tag-web-development tag-web-developer tag-front-end-develpoment tag-html tag-javascript tag-css tag-java tag-python tag-c tag-php tag-node-js tag-freecodecamp tag-devdocs tag-codecademy tag-roadmap tag-mozilla-developer-network tag-geeksforgeeks tag-w3schools tag-odin tag-codepen tag-udemy tag-youtube-2">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MN965ZD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <header class="header">
+
+
+  <div class="container site-header-wrapper">
+    <div class="row">
+      <div class="col-xs-12 header__left flex items-center">
+        <a class="header__brand" href="https://startuptalky.com">
+          <img class="header__logo" height="50px" width="68px" src="https://static.startuptalky.com/2022/07/StartupTalky_Final_Logo-1.png"
+            alt="StartupTalky" />
+        </a>
+
+        <div class="flex-1"></div>
+
+        <button class="header__menu--toggle flex-cc js-menu-toggle" tabindex="0" type="button" title=" Menu"
+          aria-label=" Menu">
+          <i class="icon icon-menu icon--sm">
+  <svg class="icon__svg">
+    <use xlink:href="/assets/icons/feather-sprite.svg?v=0337832957#menu"></use>
+  </svg>
+</i>          <i class="icon icon-x icon--sm">
+  <svg class="icon__svg">
+    <use xlink:href="/assets/icons/feather-sprite.svg?v=0337832957#x"></use>
+  </svg>
+</i>        </button>
+      </div>
+      <style>
+        .custom-header-ul {
+          display: none;
+          position: absolute;
+          top: 70px;
+          padding: 10px 5px 10px 5px;
+          background: white;
+          box-shadow: 0 4px 5px rgb(0 0 0 / 10%);
+        }
+
+        .custom-header-li {
+          width: 170px;
+          float: none;
+          padding: 5px 0px;
+          position: relative;
+          margin: 0 10px !important;
+        }
+
+        .nav-profiles:hover>ul,
+        .nav-learning:hover>ul,
+        .nav-exclusive:hover>ul,
+        .nav-services:hover>ul,
+        .nav-about:hover>ul {
+          display: grid;
+        }
+
+        .nav-sectors:hover>ul,
+        .nav-others:hover>ul {
+          display: block;
+        }
+      </style>
+
+      <div class="header-nav-menu">
+        <ul class="nav">
+
+
+
+          <li class="nav-CP">
+            <a href="https://startuptalky.com/tag/successful-company-profiles/">Companies</a>
+          </li>
+
+
+          <li class="nav-FP">
+            <a href="https://startuptalky.com/tag/startuptalkers/">Founders</a>
+          </li>
+
+
+          <li class="nav-news">
+            <a href="https://startuptalky.com/news/">News</a>
+          </li>
+
+          <li class="nav-interviews">
+            <a href="https://startuptalky.com/tag/interviews">Interviews/Podcasts</a>
+          </li>
+
+          <li class="nav-insights">
+            <a href="https://startuptalky.com/tag/insights">Insights/CaseStudies</a>
+          </li>
+
+          <li class="nav-tools">
+            <a href="https://startuptalky.com/tag/tools">Tools</a>
+          </li>
+
+          <li class="nav-learning">
+            <a href="#">Learn/Howto</a>
+            <ul class="custom-header-ul">
+              <li class="custom-header-li"><a href="https://startuptalky.com/tag/starting-up">Starting Up</a></li>
+              <li class="custom-header-li"><a href="https://startuptalky.com/tag/tech">Tech</a></li>
+              <li class="custom-header-li"><a href="https://startuptalky.com/tag/finance">Finance</a></li>
+              <li class="custom-header-li"><a href="https://startuptalky.com/tag/funding">Funding</a></li>
+              <li class="custom-header-li"><a href="https://startuptalky.com/tag/human-resource">Human Resource</a></li>
+              <li class="custom-header-li"><a href="https://startuptalky.com/tag/legal">Legal</a></li>
+              <li class="custom-header-li"><a href="https://startuptalky.com/tag/marketing">Marketing</a></li>
+              <li class="custom-header-li"><a href="https://startuptalky.com/tag/product-management">Product
+                  Management</a></li>
+              <li class="custom-header-li"><a href="https://startuptalky.com/tag/sales">Sales</a></li>
+              <li class="custom-header-li"><a href="https://startuptalky.com/tag/operations">Operations</a></li>
+              <li class="custom-header-li"><a href="https://startuptalky.com/tag/startup-challenges">Startup
+                  Challenges</a></li>
+
+            </ul>
+          </li>
+
+          <li class="others">
+            <a href="https://startuptalky.com/tag/others">Others</a>
+          </li>
+
+          <li class="nav-about">
+            <a href="https://startuptalky.com/about">About</a>
+            <ul class="custom-header-ul">
+              <li class="custom-header-li"><a href="https://startuptalky.com/advertise">Advertise</a></li>
+              <li class="custom-header-li"><a href="https://startuptalky.com/contact-us/">Contact Us</a></li>
+              <li class="custom-header-li"><a href="https://community.startuptalky.com/" target="_blank">Join
+                  Community</a></li>
+              <li class="custom-header-li"><a href="https://startuptalky.com/join-us/">Join Us</a></li>
+              <li class="custom-header-li"><a href="https://resources.startuptalky.com/" target="_blank">Startup
+                  Resources</a></li>
+              <li class="custom-header-li"><a href="https://startuptalky.com/writing-competition/">Writing
+                  Competition</a></li>
+            </ul>
+          </li>
+      </div>
+
+
+
+      <div class="col-xs col-md-6 col-lg-8 header__right items-center content-end">
+
+        <button style="margin-right: 8px; margin-left: 8px;"
+          class="header__search--toggle flex-cc js-search-toggle" tabindex="0" type="button" title=" Search"
+          aria-label=" Search">
+          <i class="icon icon-search icon--sm">
+  <svg class="icon__svg">
+    <use xlink:href="/assets/icons/feather-sprite.svg?v=0337832957#search"></use>
+  </svg>
+</i>        </button>
+
+
+        <button class="header__user flex-cc m-l-sm js-member-btn non-member"
+          title=" Menu"
+          aria-label=" Menu">
+          <i class="icon icon-user icon--sm">
+  <svg class="icon__svg">
+    <use xlink:href="/assets/icons/feather-sprite.svg?v=0337832957#user"></use>
+  </svg>
+</i>        </button>
+        <div class="user-menu js-user-menu">
+    <a class="signup-link" href="/signup/" tabindex="0"
+      title="Sign up" aria-label="Sign up">
+      <i class="icon icon-arrow-up-right icon--xs">
+  <svg class="icon__svg">
+    <use xlink:href="/assets/icons/feather-sprite.svg?v=0337832957#arrow-up-right"></use>
+  </svg>
+</i>Sign up
+    </a>
+    <a class="signin-link" href="/signin/" tabindex="0"
+      title="Sign in" aria-label="Sign in">
+      <i class="icon icon-log-in icon--xs">
+  <svg class="icon__svg">
+    <use xlink:href="/assets/icons/feather-sprite.svg?v=0337832957#log-in"></use>
+  </svg>
+</i>Sign in
+    </a>
+</div>      </div>
+    </div>
+  </div>
+</header>
+  <nav class="menu js-menu" style="top: 0; display: block">
+
+  <div style="height: 70px; display:grid; align-content: center; justify-content: left; padding-left: 15px">
+    <img class="header__logo" height="50px" width="68px" src="https://static.startuptalky.com/2022/07/StartupTalky_Final_Logo-1.png" alt="StartupTalky" />
+  </div>
+
+  <style>
+    .mobile-custom-header-li {
+      float: none;
+      position: relative;
+      list-style: none;
+      display: none;
+    }
+
+    .submenu-link {
+      padding-left: 30px !important;
+    }
+
+    .menu .nav a {
+      text-align: left;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .custom-width {
+      width: 70%;
+    }
+
+    .custom-width:hover, .menu .nav a:hover, .menu .nav a:active {
+      background-color: white !important;
+      color: hsl(0,0%,40%) !important;
+    }
+
+    .custom-icon {
+      width: 30%;
+      padding: 0px 15px 0 30px;
+      border-bottom: 1px solid hsl(0, 0%, 95%);
+      color: hsl(0, 0%, 40%)
+    }
+
+    .dd-nav {
+      display: flex;
+    }
+  </style>
+
+  <ul class="nav">
+    <li class="nav-home nav-current"><a href="https://startuptalky.com">Home</a></li>
+    <li class="nav-profiles dd-nav">
+      <a href="#" onclick="toggleDropdown('dd-profiles')" class="custom-width">Profiles</a>
+      <svg onclick="toggleDropdown('dd-profiles')" id="dd-profiles" xmlns="http://www.w3.org/2000/svg" width="24" height="44.64"
+        viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round" class="feather feather-arrow-right custom-icon">
+        <line x1="5" y1="12" x2="19" y2="12"></line>
+        <polyline points="12 5 19 12 12 19"></polyline>
+      </svg>
+    </li>
+    <li class="mobile-custom-header-li dd-profiles" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/successful-company-profiles/">Company Profile</a></li>
+    <li class="mobile-custom-header-li dd-profiles" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/startuptalkers/">Founders Profile</a></li>
+
+
+    <li class="nav-learning dd-nav">
+      <a href="#" onclick="toggleDropdown('dd-learning')" class="custom-width">Learn</a>
+      <svg onclick="toggleDropdown('dd-learning')" id="dd-learning" xmlns="http://www.w3.org/2000/svg" width="24" height="44.64"
+        viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round" class="feather feather-arrow-right custom-icon">
+        <line x1="5" y1="12" x2="19" y2="12"></line>
+        <polyline points="12 5 19 12 12 19"></polyline>
+      </svg>
+    </li>
+    <li class="mobile-custom-header-li dd-learning" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/business-development">Business Development</a></li>
+    <li class="mobile-custom-header-li dd-learning" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/finance">Finance</a></li>
+    <li class="mobile-custom-header-li dd-learning" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/funding">Funding</a></li>
+    <li class="mobile-custom-header-li dd-learning" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/human-resource">Human Resource</a></li>
+    <li class="mobile-custom-header-li dd-learning" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/legal">Legal</a></li>
+    <li class="mobile-custom-header-li dd-learning" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/marketing">Marketing</a></li>
+    <li class="mobile-custom-header-li dd-learning" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/product-management">Product Management</a></li>
+    <li class="mobile-custom-header-li dd-learning" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/public-relation">Public Relation</a></li>
+    <li class="mobile-custom-header-li dd-learning" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/sales">Sales</a></li>
+    <li class="mobile-custom-header-li dd-learning" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/starting-up">Starting Up</a></li>
+    <li class="mobile-custom-header-li dd-learning" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/startup-challenges">Startup Challenges</a></li>
+    <li class="mobile-custom-header-li dd-learning" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/tech">Tech</a></li>
+
+    <li class="nav-exclusive dd-nav">
+      <a href="#" onclick="toggleDropdown('dd-exclusive')" class="custom-width">Exclusive</a>
+      <svg onclick="toggleDropdown('dd-exclusive')" id="dd-exclusive" xmlns="http://www.w3.org/2000/svg" width="24" height="44.64"
+        viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round" class="feather feather-arrow-right custom-icon">
+        <line x1="5" y1="12" x2="19" y2="12"></line>
+        <polyline points="12 5 19 12 12 19"></polyline>
+      </svg>
+    </li>
+    <li class="mobile-custom-header-li dd-exclusive" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/case-studies">Case Studies</a></li>
+    <li class="mobile-custom-header-li dd-exclusive" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/insights">Insights</a></li>
+    <li class="mobile-custom-header-li dd-exclusive" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/interviews">Interviews</a></li>
+    <li class="mobile-custom-header-li dd-exclusive" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/opinion">Opinion</a></li>
+    <li class="mobile-custom-header-li dd-exclusive" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/podcast">Podcast</a></li>
+
+    <li class="nav-sectors dd-nav">
+      <a href="#" onclick="toggleDropdown('dd-sectors')" class="custom-width">Sectors</a>
+      <svg onclick="toggleDropdown('dd-sectors')" id="dd-sectors" xmlns="http://www.w3.org/2000/svg" width="24" height="44.64"
+        viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round" class="feather feather-arrow-right custom-icon">
+        <line x1="5" y1="12" x2="19" y2="12"></line>
+        <polyline points="12 5 19 12 12 19"></polyline>
+      </svg>
+    </li>
+    <li class="mobile-custom-header-li dd-sectors" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/automobile">Automobile</a></li>
+    <li class="mobile-custom-header-li dd-sectors" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/bfsi">BFSI</a></li>
+    <li class="mobile-custom-header-li dd-sectors" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/consumer-app">Consumer App</a></li>
+    <li class="mobile-custom-header-li dd-sectors" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/cyber-security">Cyber Security</a></li>
+    <li class="mobile-custom-header-li dd-sectors" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/d2c">D2C</a></li>
+    <li class="mobile-custom-header-li dd-sectors" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/ecommerce">Ecommerce</a></li>
+    <li class="mobile-custom-header-li dd-sectors" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/edtech">Edtech</a></li>
+    <li class="mobile-custom-header-li dd-sectors" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/entertainment">Entertainment</a></li>
+    <li class="mobile-custom-header-li dd-sectors" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/gaming">Gaming</a></li>
+    <li class="mobile-custom-header-li dd-sectors" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/healthtech">Healthtech</a></li>
+    <li class="mobile-custom-header-li dd-sectors" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/legal-tech">Legal Tech</a></li>
+    <li class="mobile-custom-header-li dd-sectors" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/real-estate">Real Estate</a></li>
+    <li class="mobile-custom-header-li dd-sectors" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/renewable-energy">Renewable Energy</a></li>
+    <li class="mobile-custom-header-li dd-sectors" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/retail">Retail</a></li>
+    <li class="mobile-custom-header-li dd-sectors" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/saas">SaaS</a></li>
+    <li class="mobile-custom-header-li dd-sectors" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/social-impact">Social Impact</a></li>
+    <li class="mobile-custom-header-li dd-sectors" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/web-3">Web 3</a></li>
+
+    <li class="nav-others dd-nav">
+      <a href="#" onclick="toggleDropdown('dd-others')" class="custom-width">For You</a>
+      <svg onclick="toggleDropdown('dd-others')" id="dd-others" xmlns="http://www.w3.org/2000/svg" width="24" height="44.64"
+        viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round" class="feather feather-arrow-right custom-icon">
+        <line x1="5" y1="12" x2="19" y2="12"></line>
+        <polyline points="12 5 19 12 12 19"></polyline>
+      </svg>
+    </li>
+    <li class="mobile-custom-header-li dd-others" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/blogging">Blogging</a></li>
+    <li class="mobile-custom-header-li dd-others" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/business-ideas">Business Ideas</a></li>
+    <li class="mobile-custom-header-li dd-others" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/events">Events</a></li>
+    <li class="mobile-custom-header-li dd-others" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/freelancing">Freelancing</a></li>
+    <li class="mobile-custom-header-li dd-others" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/govt-initiatives">Govt Initiatives</a></li>
+    <li class="mobile-custom-header-li dd-others" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/investing">Investing</a></li>
+    <li class="mobile-custom-header-li dd-others" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/job">Job</a></li>
+    <li class="mobile-custom-header-li dd-others" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/listicles">Listicles</a></li>
+    <li class="mobile-custom-header-li dd-others" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/make-money">Make Money</a></li>
+    <li class="mobile-custom-header-li dd-others" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/news">News</a></li>
+    <li class="mobile-custom-header-li dd-others" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/nocode">NoCode</a></li>
+    <li class="mobile-custom-header-li dd-others" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/productivity">Productivity</a></li>
+    <li class="mobile-custom-header-li dd-others" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/tools-reviews">Tools Reviews</a></li>
+    <li class="mobile-custom-header-li dd-others" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/unicorns">Unicorns</a></li>
+    <li class="mobile-custom-header-li dd-others" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/tag/work-from-home">Work from home</a></li>
+
+    <li class="nav-about dd-nav">
+      <a href="https://startuptalky.com/about" class="custom-width">About</a>
+      <svg onclick="toggleDropdown('dd-about')" id="dd-about" xmlns="http://www.w3.org/2000/svg" width="24" height="44.64"
+        viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round" class="feather feather-arrow-right custom-icon">
+        <line x1="5" y1="12" x2="19" y2="12"></line>
+        <polyline points="12 5 19 12 12 19"></polyline>
+      </svg>
+    </li>
+    <li class="mobile-custom-header-li dd-about" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/advertise">Advertise</a></li>
+    <li class="mobile-custom-header-li dd-about" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/contact-us/">Contact Us</a></li>
+    <li class="mobile-custom-header-li dd-about" style="display: none;"><a class="submenu-link" href="https://community.startuptalky.com/" target="_blank">Join Community</a></li>
+    <li class="mobile-custom-header-li dd-about" style="display: none;"><a class="submenu-link" href="https://resources.startuptalky.com/" target="_blank">Startup Resources</a></li>
+    <li class="mobile-custom-header-li dd-about" style="display: none;"><a class="submenu-link" href="https://startuptalky.com/writing-competition/">Writing Competition</a></li>
+  </ul>
+
+  <script>
+    function toggleDropdown(menu) {
+      var i, items;
+      if (document.getElementsByClassName(menu)[0].style.display == 'block') {
+        items = document.getElementsByClassName("mobile-custom-header-li");
+        for (i = 0; i < items.length; i++)
+          items[i].style.display = "none";
+        document.getElementById(menu).innerHTML = '<line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline>';
+      }
+      else {
+        items = document.getElementsByClassName("mobile-custom-header-li");
+        for (i = 0; i < items.length; i++)
+          items[i].style.display = "none";
+        items = document.getElementsByClassName("custom-icon");
+        for (i = 0; i < items.length; i++)
+          items[i].innerHTML = '<line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline>';
+
+        items = document.getElementsByClassName(menu);
+        for (i = 0; i < items.length; i++)
+          items[i].style.display = "block";
+        document.getElementById(menu).innerHTML = '<line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline>';
+      }
+    }
+  </script>
+
+  <ul class="nav">
+    <li class="nav-contact-us"><a href="https://startuptalky.com/contact-us/">Contact us</a></li>
+    <li class="nav-career"><a href="https://startuptalky.com/join-us/">Career</a></li>
+    <li class="nav-privacy-policy"><a href="https://startuptalky.com/privacy-policy/">Privacy Policy</a></li>
+    <li class="nav-copyright"><a href="https://startuptalky.com/copyright/">Copyright</a></li>
+    <li class="nav-disclaimer"><a href="https://startuptalky.com/affiliate-disclaimer/">Disclaimer</a></li>
+    <li class="nav-advertise-with-us"><a href="https://startuptalky.com/advertise/">Advertise with us</a></li>
+</ul>
+
+
+  <span class="flex-1"></span>
+
+  <a href="/bookmarks/" class="btn-toggle btn-bookmarks" tabindex="0" title=" Bookmarks" aria-label="
+    Bookmarks">
+    <span class="btn-toggle-icons">
+      <i class="icon icon-bookmark icon--xs">
+  <svg class="icon__svg">
+    <use xlink:href="/assets/icons/feather-sprite.svg?v=0337832957#bookmark"></use>
+  </svg>
+</i>    </span>
+    <span>Bookmarks</span>
+  </a>
+
+
+  <button class="btn-toggle btn-theme-toggle js-theme-toggle" tabindex="0" title=" Theme color scheme"
+    aria-label=" Theme color scheme">
+    <span class="btn-toggle-icons">
+      <i class="icon icon-settings icon--xs">
+  <svg class="icon__svg">
+    <use xlink:href="/assets/icons/feather-sprite.svg?v=0337832957#settings"></use>
+  </svg>
+</i>    </span>
+    <span>Theme</span>
+  </button>
+
+  <div class="color-scheme-picker js-color-scheme-picker">
+</div>
+
+<template class="js-color-scheme-template">
+  <button class="color-scheme w-100 js-color-scheme" data-color-scheme="">
+    <span class="color-scheme__name flex-1 text-left"></span>
+    <span class="color-scheme__color bg-primary"></span>
+    <span class="color-scheme__color bg-secondary"></span>
+    <span class="color-scheme__color bg-default"></span>
+    <span class="color-scheme__color bg-text"></span>
+  </button>
+</template>
+
+</nav>
+  <div class="modal-bkg hide" id="search_modal">
+    <div id="modal_close_bkg" class="modal-close" >
+    </div>
+        <div class="search-modal">
+            <h4 class="modalTitle" >Everything you'd want to know about the startup world</h4>
+            <p class="modalText" >News, interviews, stories, trends, practices, guides and much more. </p>
+            <form action="/" method="get" class="search__form items-center js-search-form">
+                <button class="search__icon m-r-sm js-search-btn" id="search-button" type="button" title="
+                    Search" aria-label=" Search">
+                    <i class="icon icon-search icon--sm">
+  <svg class="icon__svg">
+    <use xlink:href="/assets/icons/feather-sprite.svg?v=0337832957#search"></use>
+  </svg>
+</i>                </button>
+                <input type="search" id="ghost-search-field" class="search__input" aria-labelledby="search-button"
+                    title=" Search" placeholder=" Search topics and articles..." autocomplete="off" required />
+                <span class="search__cancel js-search-cancel">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                            d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm121.6 313.1c4.7 4.7 4.7 12.3 0 17L338 377.6c-4.7 4.7-12.3 4.7-17 0L256 312l-65.1 65.6c-4.7 4.7-12.3 4.7-17 0L134.4 338c-4.7-4.7-4.7-12.3 0-17l65.6-65-65.6-65.1c-4.7-4.7-4.7-12.3 0-17l39.6-39.6c4.7-4.7 12.3-4.7 17 0l65 65.7 65.1-65.6c4.7-4.7 12.3-4.7 17 0l39.6 39.6c4.7 4.7 4.7 12.3 0 17L312 256l65.6 65.1z" />
+                    </svg>      
+                </span>
+            </form>
+        </div>
+</div>
+  <main class="main">
+       <div
+  style="padding-left: 30px; padding-right: 30px;" class="container wrapper">
+
+  <div class="row">
+    <div class="col-xs-12 col-lg-8">
+      <div class="hero">
+  <div class="hero__content flex flex-col m-b-lg">
+
+    <h1 class="hero__title ">11+ Best Online Resources to Learn Web Development</h1>
+
+    <div class="author-mini flex items-center">
+      <a href="/author/prakash/" class="author-mini__item has-icon nr-1"
+        title="Prakash Mishra" aria-label="Prakash Mishra">
+        <span class="author-mini__tooltip">Prakash Mishra</span>
+        <span class="author-mini__letter">Prakash Mishra</span>
+      </a>
+      <a href="/author/atish/" class="author-mini__item has-img  nr-2"
+        title="Atish Ranjan Das" aria-label="Atish Ranjan Das">
+        <span class="author-mini__tooltip">Atish Ranjan Das</span>
+        <img class="lazyload author-mini__img" data-sizes="auto" data-src="https://static.startuptalky.com/2022/09/Untitled-design-1.jpg"
+          src="https://static.startuptalky.com/2022/09/Untitled-design-1.jpg" alt="Atish Ranjan Das" />
+      </a>
+    <div style="margin-left: 10px;" class="flex text-acc-3 fw-500">
+      <span>Jun 3, 2022</span>
+      <span class="m-l-sm m-r-sm">&mdash;</span>
+      <span>15 min read</span>
+    </div>
+    </div>
+
+  </div>
+
+  <div class="hero__media m-b-lg wide">
+    <figure class="hero__figure">
+      <img class="lazyload hero__img" data-srcset="https://static.startuptalky.com/2022/06/Web-Development-startuptalky-.jpg 300w, https://static.startuptalky.com/2022/06/Web-Development-startuptalky-.jpg 600w, https://static.startuptalky.com/2022/06/Web-Development-startuptalky-.jpg 1000w, https://static.startuptalky.com/2022/06/Web-Development-startuptalky-.jpg 2000w"
+        srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-sizes="auto"
+        data-src="https://static.startuptalky.com/2022/06/Web-Development-startuptalky-.jpg" src="https://static.startuptalky.com/2022/06/Web-Development-startuptalky-.jpg" alt="11+ Best Online Resources to Learn Web Development" />
+      <figcaption></figcaption>
+    </figure>
+  </div>
+</div>
+      <article class="post tag-collections tag-web-development-course-online tag-web-development tag-web-developer tag-front-end-develpoment tag-html tag-javascript tag-css tag-java tag-python tag-c tag-php tag-node-js tag-freecodecamp tag-devdocs tag-codecademy tag-roadmap tag-mozilla-developer-network tag-geeksforgeeks tag-w3schools tag-odin tag-codepen tag-udemy tag-youtube-2 content-wrap post-access-public post-with-sidebar">
+        
+        <div class="content">
+          <p>When you start learning a new <strong>Programming Language</strong> or we can say <strong>Web Development</strong>, you will invariably find yourself wanting to turn to <strong>Google </strong>and do a search for <strong>“free resources to learn Web Development”.</strong></p><p>Maybe you are one of those people who just want to start a career as a <strong>Web Developer</strong> or you have not thought about it. If you don't know about Web Development then let me tell you that it is among the highest paying jobs in the world. So, it's a great option to become a web developer. <br><br>You can gain expertise in both front-end and back-end development by exploring a good <a href="https://www.odinschool.com/full-stack-software-development-bootcamp?ref=startuptalky.com">Full Stack Developer Course.</a></p><p>However, if you are looking for some FREE resources to get started with web development, there are plenty of them out there. It can be overwhelming browsing through all the sites to try and find the best ones. Well, I did it for you! Below is a comprehensive list of free resources that will help you get started with web development.</p><p>Before we talk about free resources to learn Web Development we have to see a complete roadmap. The technologies we should be familiar with, as well as the frameworks to learn. After that, we will check the free resources.</p><p>So, Let's get started.</p><!--kg-card-begin: html--> <h2 id="What_is_Web_Development?"> What is Web Development?</h2><!--kg-card-end: html--><p>Web development is the process of creating web pages online and optimizing them for web searches. It comprises different tasks such as<strong> web design, web publishing, web programming, </strong>and <strong>database management.</strong> Web developer uses different technologies and programming languages to build responsive websites.</p><p><a href="https://startuptalky.com/web-developer-resume/">Web development jobs</a> are some of the most in-demand of the 21st century and you can use free, open-source resources to learn how to become a web developer.</p><!--kg-card-begin: html--> <h2 id="Why_Web_Development_is_a_good_career?"> Why Web Development is a good career?</h2><!--kg-card-end: html--><figure class="kg-card kg-embed-card"><iframe width="200" height="113" src="https://www.youtube.com/embed/SGt2uaWF7lc?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></figure><p>Web development is a career that has been around for decades but its popularity has surged in the last few years.</p><p>There are many reasons for this, from the fact that you get to constantly <a href="https://startuptalky.com/top-in-demand-skills/">develop new skill</a> sets and become an expert in your field to the fact that the internet has made it easier than ever before to start and run a business from anywhere in the world.</p><p>It’s also no surprise that web development is recognized as one of the <a href="https://startuptalky.com/future-top-skills/">best careers of 2022</a> due to its high-income capacity, flexibility, and hundreds of job openings for programmers online every day as companies have sought out skilled Web Developers to build their web presence.</p><p>Following are the benefits you should get as a web developer:</p><ol><li><strong>Fun and Easy to learn:</strong> Web Development is one of the easiest and most popular technologies that everyone is trying to learn. The demand for it is growing and more and more people are getting involved in it.</li><li><strong>High-Demand:</strong> Web Development is in high demand across the world. According to Google, it's the 5th most popular technology in the world.</li><li><strong>High-paid jobs:</strong> Web Development is one of the highest-paid jobs across the world. If we talk about India then according to Payscale the average salary of a web developer is almost 4-7 lakhs per annum.</li><li><strong>Jobs Flexibility:</strong> Web development is an in-demand skill that can bring flexibility, creativity, and more opportunities in your career. No matter where you go, people will need your help to build or improve their websites or make designs for print materials. Even you can start your Freelancing career.</li></ol><h3 id="web-development-types">Web Development Types</h3><p>Web Development is classified in two ways i.e.:</p><ol><li><strong>Front-End Development </strong>(also known as "client-side" application).</li><li><strong>Back-end Development</strong> (also known as "server-side" application).</li></ol><p>Let's get to know more about ways of web development.</p><hr><figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="https://startuptalky.com/become-successful-techpreneur-tips/"><div class="kg-bookmark-content"><div class="kg-bookmark-title">A Complete Guide to Become a Successful Techpreneur.</div><div class="kg-bookmark-description">Looking to become a successful techpreneur? Check out this article to know tips and tricks for becoming a technopreneur.</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="https://startuptalky.com/assets/icon-192x192.png?v&#x3D;94535b4934" alt><span class="kg-bookmark-author">StartupTalky</span><span class="kg-bookmark-publisher">Aditi Chawda</span></div></div><div class="kg-bookmark-thumbnail"><img src="https://static.startuptalky.com/2022/05/techpreneur-skills.jpg" alt></div></a></figure><hr><!--kg-card-begin: html--> <h2 id="What_is_Front-End_Development?"> What is Front-End Development?</h2><!--kg-card-end: html--><figure class="kg-card kg-embed-card"><iframe width="200" height="113" src="https://www.youtube.com/embed/qyHyFsT7Hig?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></figure><p><strong>Front-end development</strong> refers to anything that you see on the page in the browser once it is loaded by the browser. So anything outside of <strong>JavaScript</strong> and <strong>CSS </strong>will be considered front-end web development.</p><p>Front-End Developers are responsible for <strong>structuring, organizing, designing, behavior,</strong> and many more to a website. Whenever we open any website responsive, performance, and designing all of these things come under front-end developers.</p><p>Front-End Development mainly consists of HTML for structuring layout, CSS for designing purposes, and JavaScript for making website interactive.</p><ol><li><strong>HTML:</strong> HTML stands for <strong>HyperText Markup Language</strong>. They are the HTML programmer that creates the content, navigation, and other parts of a website. When building a website, you will need a web designer who can build custom website templates to your specifications. You will also need an HTML programmer to create the code, project management, and other components that are needed for your website to be functional.</li><li><strong>CSS: </strong>CSS stands for <strong>Cascading Style Sheets</strong>. CSS is a way for a designer or developer to control how elements appear on the screen. Let's use as an example a heading that says "My Article". If you're using HTML, that heading would look something like this: My Article. With CSS, you can use that same My Article tag, and make it display in many different ways using CSS.</li><li><strong>JavaScript</strong>: JavaScript is a <a href="https://startuptalky.com/programming-languages-data-analyst/">programming language</a> used to make websites interactive. However, it can also be used for a variety of other things as well such as adding functionality, a programming language for games, user interface enhancements such as using an alert box or a modal window or even sending an <strong>AJAX/XHR </strong>request. There are a lot of incredible tools out there that add functionality to your website for you.</li></ol><p>Once you know about the basic concepts then you can start learning libraries and frameworks such as <strong>React, Angular, </strong>and <strong>Vue.js</strong>.</p><!--kg-card-begin: html--> <h2 id="What_is_Back-End_development?"> What is Back-End development?</h2><!--kg-card-end: html--><figure class="kg-card kg-embed-card"><iframe width="200" height="113" src="https://www.youtube.com/embed/cbSrsYiRamo?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></figure><p><strong>Back-end development</strong> is the process of building software that runs on a web server and most often interacts with a database.­­ Sometimes referred to as server-side development. The backend is the part of the website you can't see. It's what makes your website function and allows you to update, add, or delete content.</p><p>It's the opposite of front-end development, which is what many designers, marketers, and people in the creative industries develop.</p><p>The Back-End development is specifically designed by some popular programming languages i.e. <strong>JavaScript, Java, Python, C++, PHP</strong>, etc.</p><p>Now let's get to know more about back-end languages and how these languages are allowing us to develop back-end parts.</p><ul><li><strong>PHP:</strong> PHP, which stands for <strong>Hypertext Preprocessor</strong>, is a server-side programming language commonly used to build websites and apps. It can be found in most web servers and is often referred to as a “buildup” programming language because it adds functionality and capabilities to HTML documents and other source code.</li><li><strong>C++:</strong> C++ is a statically typed, free-form, multiparadigm, compiled, general-purpose programming language. It is regarded as "both elegant and efficient and is one of the most popular programming languages in use today". It's also used as a back-end language.</li><li><strong>Java: </strong>Java programming language is used by lots of developers all over the world to develop a wide range of projects and applications like software, games, and Web-based apps, along with other operating systems. People are using different Java tools through which they can create a lot of programs both small and large.</li><li><strong>Python: </strong>Python is an open-source programming language used for general-purpose programming. It can be used to develop desktop applications, web applications, network applications, and even games. Some of the major companies which use python are Google and Yahoo.</li><li><strong>JavaScript:</strong> JavaScript is one of the most powerful languages in the world today. It can be used anywhere from a small website to a web-based game as well as almost anything else you might think of with just a little bit of creativity.</li><li><strong>Node.JS:</strong> Node.js is most popularly described as server-side Javascript and it is used as a part of web development as well as for creating network applications. Node js has become extremely popular these days because of its diverse uses and simple working mechanism. It is applicable on almost every platform and can be easily implemented on any website or place which requires a real-time response.</li></ul><p>These are the programming language which is mainly used as a back-end language. There are some back-end frameworks such as <strong><em>Express, Django, Rails, Laravel, Spring, etc.</em></strong> that makes your life so much easy and more productive.</p><p>So these are the basic technologies that are mainly used in the back-end part and you have to learn any of them. Once you have a great knowledge of these technologies you can say yourself a Full-Stack Web Developer.</p><p>Now, most of you have heard about <strong>"MERN" </strong>and <strong>"MEAN"</strong> tech stacks.</p><p><strong>MERN (MongoDB, Express, React, Node):</strong> If you have chosen React as a framework then you will become a MERN developer.</p><p><strong>MEAN (MongoDB, Express, Angular, Node):</strong> If you have chosen Angular as a framework then you will become a MEAN developer.</p><p>Now, let's get to know free resources to learn Web Development.</p><h3 id="15-best-online-resources-to-learn-web-development">15+ Best Online Resources to Learn Web Development</h3><!--kg-card-begin: html--> <h2 id="freeCodeCamp"> freeCodeCamp</h2><!--kg-card-end: html--><figure class="kg-card kg-image-card"><img src="https://static.startuptalky.com/2022/06/freeCodeCamp-startuptalky-.jpg" class="kg-image" alt loading="lazy" width="1200" height="675"></figure><p><strong>freeCodeCamp</strong> is an online coding <strong>Bootcamp </strong>that helps people learn <strong>Full Stack Web Development</strong>. Not only this, but you can also learn trending technologies like <strong><a href="https://startuptalky.com/machine-learning-books/">Machine Learning, Artificial Intelligence,</a> Data Scientist,</strong> and many more.</p><p>Unlike other resources, freeCodeCamp is an all-volunteer, community-run effort conducted by passionate volunteers across the globe who are always ready to help you with their YouTube Channels, subreddit, forum, and Discord server.</p><!--kg-card-begin: html--> <h2 id="DevDocs"> DevDocs</h2><!--kg-card-end: html--><figure class="kg-card kg-image-card"><img src="https://static.startuptalky.com/2022/06/DevDocs-startuptalky-.jpg" class="kg-image" alt loading="lazy" width="1200" height="675"></figure><p><strong>Devdocs.io</strong> is the best tool in your developer's toolbox. DevDocs is a documentation service that helps developers find and understand code. It offers two main features: <strong>Documentation Search </strong>and<strong> Code Snippets</strong>. It combines multiple API documentations in a fast, organized, and searchable interface. This is one of the best resources for any developer to learn any technologies.</p><p>As a Web Developer, you can use DevDocs as a reference to understand many concepts and implement them on your project.</p><!--kg-card-begin: html--> <h2 id="Codecademy"> Codecademy</h2><!--kg-card-end: html--><figure class="kg-card kg-image-card"><img src="https://static.startuptalky.com/2022/06/Codecademy-startuptalky-.jpg" class="kg-image" alt loading="lazy" width="1200" height="675"></figure><p><strong>Codecademy </strong>is an online interactive <strong>code editor</strong>, which helps build up your Web Development skills such as <strong>HTML, CSS, JavaScript, Node.js,</strong> and many more by teaching you the basics. It's a great place to start if you are new to web development but don't want to go through the pain of reading a lot of books just to learn a programming language.</p><p>It also provides you with paid courses for advanced learning.</p><!--kg-card-begin: html--> <h2 id="Roadmap"> Roadmap</h2><!--kg-card-end: html--><figure class="kg-card kg-image-card"><img src="https://static.startuptalky.com/2022/06/Roadmap-startuptalky-.jpg" class="kg-image" alt loading="lazy" width="1200" height="675"></figure><p>The <strong>Roadmap </strong>is a collaborative and visual <a href="https://startuptalky.com/remote-project-management-tools/">project management tool</a> designed to help <a href="https://startuptalky.com/how-to-start-software-company-in-india/">software developers</a> to create roadmaps, guides, and teams to plan and manage projects more effectively and efficiently. It’s a hybrid solution that combines the benefits of <a href="https://startuptalky.com/team-collaboration-tools/">online collaboration</a> with the ease of use of desktop applications. This is one of the best websites for any developer to guide any path.</p><p>Users can access Roadmap from any device, whether they’re at home, in the office, or on the road. The platform integrates with third-party services like <strong>Dropbox, Google Drive, </strong>and <strong>Salesforce</strong> to store documents securely in the cloud.</p><!--kg-card-begin: html--> <h2 id="Mozilla_Developer_Network(MDN)"> Mozilla Developer Network(MDN)</h2><!--kg-card-end: html--><figure class="kg-card kg-image-card"><img src="https://static.startuptalky.com/2022/06/Mozilla-startuptalky-.jpg" class="kg-image" alt loading="lazy" width="1200" height="675"></figure><p>The <strong>Mozilla Developer Network (MDN)</strong> is a great resource for web developers, from newbies to those that have been hacking away for years. The MDN covers the core web dev technologies in point from newbies to advanced lessons, including HTML, CSS, and JavaScript.</p><p>If you are finding yourself in a tough spot where the documentation for a particular API just isn't cutting it — head over to MDN and search for your solution.</p><hr><figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="https://startuptalky.com/chrome-extensions-review/"><div class="kg-bookmark-content"><div class="kg-bookmark-title">5 Essential Google Chrome Extensions for Web Developers</div><div class="kg-bookmark-description">Use these Chrome extensions to boost your productivity. These extensions help designers and developers streamline their workflow.</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="https://startuptalky.com/assets/icon-192x192.png?v&#x3D;94535b4934" alt><span class="kg-bookmark-author">StartupTalky</span><span class="kg-bookmark-publisher">Dev Kumar Padhy</span></div></div><div class="kg-bookmark-thumbnail"><img src="https://static.startuptalky.com/2021/02/Chrome--feature-startuptalky.jpg" alt></div></a></figure><hr><!--kg-card-begin: html--> <h2 id="GeeksForGeeks(GFG)"> GeeksForGeeks(GFG)</h2><!--kg-card-end: html--><figure class="kg-card kg-image-card"><img src="https://static.startuptalky.com/2022/06/GeeksForGeeks-startuptalky-.jpg" class="kg-image" alt loading="lazy" width="1200" height="675"></figure><p><strong>GeeksForGeeks</strong> is a very popular programming platform where you can find all the articles and videos that are created by the community. They are spread around different topics having to do with programming such as HTML, CSS, and JavaScript. GeeksForGeeks started as a programming forum but slowly transformed into a site where people could contribute by posting tutorials, and articles and asking questions. GeeksForGeeks has a very large community and there are a lot of active users on the forums.</p><!--kg-card-begin: html--> <h2 id="W3Schools"> W3Schools</h2><!--kg-card-end: html--><figure class="kg-card kg-image-card"><img src="https://static.startuptalky.com/2022/06/W3Schools-startuptalky-.jpg" class="kg-image" alt loading="lazy" width="1200" height="675"></figure><p><strong>W3 Schools</strong> ‘the most popular and complete web development tutorial site on the Internet.'</p><p>Along with GFG, W3Schools is also a go-to website for so many web developers. It is a web development and design training site based in <strong>Minnesota, <a href="https://startuptalky.com/top-unicorn-startups-united-states/">United States</a></strong>. It provides tutorials for individuals who want to learn about website design, HTML, CSS, and JavaScript. With over 2 million registered members and more than 220 thousand courses, this is one of the biggest libraries of programming courses on the Internet.</p><!--kg-card-begin: html--> <h2 id="The_Odin_Project"> The Odin Project</h2><!--kg-card-end: html--><figure class="kg-card kg-image-card"><img src="https://static.startuptalky.com/2022/06/Odin-startuptalky-.jpg" class="kg-image" alt loading="lazy" width="1200" height="675"></figure><p>The <strong>Odin Project</strong> is exactly the same as freeCodeCamp which is an open-source online learning platform. It features a 3 Full-Stack Web Development course where they covered each and every concept of HTML, CSS, JavaScript, Git, databases, Ruby/Ruby on Rails, and Node.js.</p><p>Following are the 3 courses provided by The Odin projects:</p><ol><li><strong>Foundation:</strong> In this, you will learn all the essential tools that are needed to build real and working websites.</li><li><strong>Full-stack Ruby on Rails:</strong> After completing the foundation course, this course takes you to the entire ruby on rails curriculum.</li><li><strong>Full Stack JavaScript:</strong> After completing the foundation course, this course takes you to the entire JavaScript curriculum.</li></ol><!--kg-card-begin: html--> <h2 id="Codepen"> Codepen</h2><!--kg-card-end: html--><figure class="kg-card kg-image-card"><img src="https://static.startuptalky.com/2022/06/Codepen-startuptalky-.jpg" class="kg-image" alt loading="lazy" width="1200" height="675"></figure><p>The <strong>Codepen </strong>is a front-end editing environment. It lets you write HTML, CSS, JavaScript, and other web-related languages without having to open up the code in a text editor, save it, hit reload button, and check your changes.  You can see your changes instantly on the fly as you make them. This is particularly useful for testing small tweaks to your CSS or JS code or when you want to refine the design of an element on your website.</p><!--kg-card-begin: html--> <h2 id="Udemy_Courses"> Udemy Courses</h2><!--kg-card-end: html--><p>Currently, <strong><a href="https://startuptalky.com/udemy-success-story/">Udemy</a> </strong>is the best platform to learn any technology whether it is Web development or any other.</p><p>Udemy is an <a href="https://startuptalky.com/edtech-market-expansion-india/">online education platform</a>, that provides a big collection of online courses that include video lessons on HTML, CSS, JavaScript, Angular, React, Git, GitHub, and many more. It's a web application that provides different facilities to the willing user. It has the facility of several other platforms which include online coaching. It's a place where you can able to get unlimited knowledge from all over the world.</p><p>While most of the courses are not free but they are budget-friendly for any student. Here are some of the best courses that you can enroll.</p><p>Following are the top 3 free courses available on Udemy for web development:</p><ul><li><strong>Web Design for Web Developers: Build Beautiful Websites!</strong></li></ul><p>Learn web design in an hour with over 25 easy-to-use rules and guidelines-includes lots of great web design resources. In this course you will get:</p><ol><li>Free access to the best resources for web design and development with HTML5 and CSS3 courses eBook.</li><li>How to use 8 easy-to-use techniques to improve your website conversion.</li><li><strong>Javascript Essentials</strong></li></ol><p>Learn some basic APIs of how javascript works, and finally create a mini-project. In this course you will get:</p><ol><li>Learn what is JavaScript and basic syntax.</li><li>Get to know more about hidden quirks in JavaScript language.</li><li><strong>Practical PHP: Master the Basics and Code Dynamic Websites</strong></li></ol><p>Learn PHP with real-world applications and examples to code your dynamic website. In this course you will get:</p><ol><li>At the end of the course, you have a very good knowledge of the PHP language.</li><li>Learn how to build a website for restaurants, etc. </li></ol><h2 id="become-a-certified-html-css-javascript-web-developer">Become a Certified HTML, CSS, JavaScript Web Developer</h2><figure class="kg-card kg-image-card"><img src="https://static.startuptalky.com/2022/06/Mark-Lassof-startuptalky-.jpg" class="kg-image" alt loading="lazy" width="1200" height="675"></figure><p>This course covers every concept of HTML, CSS, and JavaScript with 25 engaging lab exercises and Dozens of Code Examples to Download and Study.</p><p>While you complete this course you will earn 4 Certification as a Proof of your Competence.</p><p>Created by: Tech Learning network, Mark Lassof.</p><p>Course content: 84 sections • 523 lectures • 45h 44m total length</p><h2 id="learn-web-designing-html5css3-essentials-in-4-hours">Learn Web Designing &amp; HTML5/CSS3 Essentials in 4-Hours</h2><figure class="kg-card kg-image-card"><img src="https://static.startuptalky.com/2022/06/Hussey-startuptalky-.jpg" class="kg-image" alt loading="lazy" width="1200" height="675"></figure><p>In this course, you will learn how to shred up a Photoshop <a href="https://startuptalky.com/graphic-designing-tools/">Design</a> into an amazing and hand-code valid HTML5 &amp; CSS3 website with proper knowledge. It doesn't require any prior knowledge.</p><p>In the end, you will be able to divert a PSD into a gorgeous, functional, and valid HTML5 &amp; CSS3 website.</p><p>Created by: Brad Hussey, Code college.</p><p>Course content: 8 sections • 24 lectures • 4h 11m total length.</p><!--kg-card-begin: html--> <h2 id="YouTube"> YouTube</h2><!--kg-card-end: html--><p><strong><a href="https://startuptalky.com/youtube-success-story/">YouTube</a> </strong>is one of the most used websites in the world. It's like a goldmine for <a href="https://startuptalky.com/how-to-start-software-company-in-india/">software developers</a> to understand any concepts easily. Here are the 4 most amazing YouTube channels that provide a full course on  Web Development:</p><h2 id="codewithharry">CodeWithHarry</h2><figure class="kg-card kg-image-card"><img src="https://static.startuptalky.com/2022/06/CodeWithHarry--startuptalky-.jpg" class="kg-image" alt loading="lazy" width="1200" height="675"></figure><p><strong>CodeWithHarry</strong> is a first-of-its-kind initiative to demystify web development and bring it closer to the masses. The mantra, "Anybody can do it" captures the idea behind this initiative. Whether you are a developer or just want to code; if you follow CodeWithHarry, you will be able to develop your passion into reality!</p><p>CodeWithHarry provides you with a full course on Web Development which includes HTML, CSS, JS, React, Angular, PHP, Java, and many more languages.</p><h2 id="traversy-media">Traversy Media</h2><figure class="kg-card kg-image-card"><img src="https://static.startuptalky.com/2022/06/Traversy--startuptalky-.jpg" class="kg-image" alt loading="lazy" width="1200" height="675"></figure><p><strong>Traversy Media</strong> is one of the best YouTube channels right now to learn HTML, CSS, JS, React, Angular, and Vue.js from absolute beginners to advanced levels.</p><p>Traversy Media capabilities high-quality web development and programming tutorials for all the modern web technologies from the building blocks of HTML, CSS &amp; JavaScript to frontend frameworks like React and Vue to backend technology like Node.js, Python, and Hypertext Preprocessor.</p><h2 id="clever-programmer">Clever Programmer</h2><figure class="kg-card kg-image-card"><img src="https://static.startuptalky.com/2022/06/Clever--startuptalky-.jpg" class="kg-image" alt loading="lazy" width="1200" height="675"></figure><p>In <strong>Clever Programmer</strong> can find awesome programming lessons here on HTML, CSS, JavaScript, React, Angular, etc. Even you will get a hands-on project which you can develop by yourself easily. Also, expect programming tips and tricks that will take your coding skills to the next level.</p><h2 id="the-net-ninja">The Net Ninja</h2><figure class="kg-card kg-image-card"><img src="https://static.startuptalky.com/2022/06/Net-Ninja-startuptalky-.jpg" class="kg-image" alt loading="lazy" width="1200" height="675"></figure><p>Get yourself a black belt in Web Development with the help of <strong>The Net Ninja</strong>. They uploaded almost 1000+ programming tutorials on Modern JavaScript (beginner to advanced), Node.js, React, Vue.js, Firebase, MongoDB, HTML &amp; CSS, PHP &amp; MySQL, Laravel, React Native, Flutter, and many more.</p><p>These were the Best online course to learn Web Development. As you all know that building projects make your concepts more clear and for that there are 3 bonus websites where you can practice HTML, CSS, and JavaScript.</p><!--kg-card-begin: html--> <h2 id="Bonus"> Bonus</h2><!--kg-card-end: html--><h2 id="1-css-tricks">1.  CSS Tricks</h2><figure class="kg-card kg-image-card"><img src="https://static.startuptalky.com/2022/06/CSS-tricks-startuptalky-.jpg" class="kg-image" alt loading="lazy" width="1200" height="675"></figure><p>As you all know that CSS plays an important role while developing a website. So it's to know <strong>CSS tricks</strong> that are very useful for any developer while developing websites.</p><p>This website will help you to practice CSS tricks and also provides you with videos, articles, guides, and many more.</p><h2 id="2-css-battle">2. CSS Battle</h2><figure class="kg-card kg-image-card"><img src="https://static.startuptalky.com/2022/06/CSS-battle-startuptalky-.jpg" class="kg-image" alt loading="lazy" width="1200" height="675"></figure><p>You may be wondering, what the heck is <strong>CSS Battle</strong>? Let me fill you in on how it works. Basically, for 24 hours two CSS artists will code each other's sites live. These coders include front-end developers, designers, and artists. It has been an interesting concept that some may have never heard of.</p><h2 id="3-coding-dojo">3. Coding Dojo</h2><figure class="kg-card kg-image-card"><img src="https://static.startuptalky.com/2022/06/Dojo-startuptalky-.jpg" class="kg-image" alt loading="lazy" width="1200" height="675"></figure><p><strong>Coding Dojo</strong> is one of the best online platforms to improve your coding skills through its own coding platform, challenges, videos, and assessments.</p><hr><figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="https://startuptalky.com/email-blasts/"><div class="kg-bookmark-content"><div class="kg-bookmark-title">What Is Email Blast and How to Do It the Right Way?</div><div class="kg-bookmark-description">Email blast is an effective marketing technique to reach most customers with just one email. Let’s look at what an eblast is and how to make one.</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="https://startuptalky.com/assets/icon-192x192.png?v&#x3D;94535b4934" alt><span class="kg-bookmark-author">StartupTalky</span><span class="kg-bookmark-publisher">Revathy Nair</span></div></div><div class="kg-bookmark-thumbnail"><img src="https://static.startuptalky.com/2022/05/Email-Blast-Guide-StartupTalky.jpg" alt></div></a></figure><hr><h2 id="conclusion">Conclusion</h2><p>In this article, you will find some of the best online resources by which you can learn web development. This guide has been written so that you do not face any difficulty while learning from the web platforms. You will see a lot of websites offering web development courses, but not all of the platforms are worth choosing. However, the list of best online resources given below is a great start for your learning. So, pick one and make a start!</p><h2 id="faqs">FAQs</h2><h3 id="what-is-web-development">What is Web Development?</h3><p>Web Development is the process of creating web pages online and optimizing them for web searches.</p><h3 id="what-are-the-types-of-web-development">What are the types of Web Development?</h3><p>Web Development is classified in two ways i.e.:<br>Front-End Development (also known as "client-side" application).<br>Back-end Development (also known as "server-side" application).</p><h3 id="what-is-front-end-development">What is Front-end development?</h3><p>Front-end development refers to anything that you see on the page in the browser once it is loaded by the browser.</p><h3 id="what-is-back-end-development">What is Back-end development?</h3><p>Back-end development is the process of building software that runs on a web server and most often interacts with a database.</p>
+        </div>
+
+        <div style="margin: 30px 0;">
+          <div class="social-share">
+  <a class="social-share__item js-share" tabindex="0" target="_blank"
+      href="https://twitter.com/share?text=11%2B%20Best%20Online%20Resources%20to%20Learn%20Web%20Development&amp;url=https://startuptalky.com/learn-web-development-online-resources/"
+      title="Share on Twitter" aria-label="Share on Twitter">
+    <i class="icon icon-twitter icon--sm">
+  <svg class="icon__svg">
+    <use xlink:href="/assets/icons/feather-sprite.svg?v=0337832957#twitter"></use>
+  </svg>
+</i>  </a>
+  <a class="social-share__item js-share" tabindex="0"
+      href="https://www.facebook.com/sharer.php?u=https://startuptalky.com/learn-web-development-online-resources/"
+      title="Share on Facebook" aria-label="Share on Facebook">
+    <i class="icon icon-facebook icon--sm">
+  <svg class="icon__svg">
+    <use xlink:href="/assets/icons/feather-sprite.svg?v=0337832957#facebook"></use>
+  </svg>
+</i>  </a>
+  <a class="social-share__item js-share" tabindex="0" target="_blank"
+      href="https://www.linkedin.com/shareArticle?mini=true&url=https://startuptalky.com/learn-web-development-online-resources/&title=11%2B%20Best%20Online%20Resources%20to%20Learn%20Web%20Development&summary=11%2B%20Best%20Online%20Resources%20to%20Learn%20Web%20Development"
+      title="Share on Linkedin" aria-label="Share on Linkedin">
+    <i class="icon icon-linkedin icon--sm">
+  <svg class="icon__svg">
+    <use xlink:href="/assets/icons/feather-sprite.svg?v=0337832957#linkedin"></use>
+  </svg>
+</i>  </a>
+  <a class="social-share__item" tabindex="0"
+      href="mailto:?subject=11%2B%20Best%20Online%20Resources%20to%20Learn%20Web%20Development&body=https://startuptalky.com/learn-web-development-online-resources/&nbsp;11%2B%20Best%20Online%20Resources%20to%20Learn%20Web%20Development"
+      title="Share by email" aria-label="Share by email">
+    <i class="icon icon-mail icon--sm">
+  <svg class="icon__svg">
+    <use xlink:href="/assets/icons/feather-sprite.svg?v=0337832957#mail"></use>
+  </svg>
+</i>  </a>
+  <button class="copy-link js-copy-link" tabindex="0" data-url="https://startuptalky.com/learn-web-development-online-resources/"
+      title="Copy to clipboard" data-label="Copied!" aria-label="Copy to clipboard">
+    <i class="icon icon-copy icon--sm">
+  <svg class="icon__svg">
+    <use xlink:href="/assets/icons/feather-sprite.svg?v=0337832957#copy"></use>
+  </svg>
+</i>  </button>
+  <button class="handle-bookmark js-handle-bookmark" tabindex="0" 
+      data-id="6295d281ccbee051b70ed372" data-url="https://startuptalky.com/learn-web-development-online-resources/" data-title="11+ Best Online Resources to Learn Web Development"
+      title="Bookmark" data-label="" aria-label="Bookmark">
+    <i class="icon icon-bookmark icon--sm">
+  <svg class="icon__svg">
+    <use xlink:href="/assets/icons/feather-sprite.svg?v=0337832957#bookmark"></use>
+  </svg>
+</i>  </button>
+</div>
+
+        </div>
+
+        <div class="affiliateCard">
+    
+</div>
+        <div style="margin:24px 0;" class="tag-list flex flex-wrap m-b-sm tag-list-margin">
+          <a style="border-radius: 3px; margin-right: .5em"
+            class="tag-collections tag-list__item"
+            href="/tag/collections/" title="Collections 🗒️" aria-label="Collections 🗒️">
+            Collections 🗒️
+          </a>
+          <a style="border-radius: 3px; margin-right: .5em"
+            class="tag-web-development-course-online tag-list__item "
+            href="/tag/web-development-course-online/" title="web development course online" aria-label="web development course online">
+            web development course online
+          </a>
+          <a style="border-radius: 3px; margin-right: .5em"
+            class="tag-web-development tag-list__item "
+            href="/tag/web-development/" title="web development" aria-label="web development">
+            web development
+          </a>
+          <a style="border-radius: 3px; margin-right: .5em"
+            class="tag-web-developer tag-list__item "
+            href="/tag/web-developer/" title="Web Developer" aria-label="Web Developer">
+            Web Developer
+          </a>
+          <a style="border-radius: 3px; margin-right: .5em"
+            class="tag-front-end-develpoment tag-list__item "
+            href="/tag/front-end-develpoment/" title="Front end develpoment" aria-label="Front end develpoment">
+            Front end develpoment
+          </a>
+          <a style="border-radius: 3px; margin-right: .5em"
+            class="tag-html tag-list__item "
+            href="/tag/html/" title="HTML" aria-label="HTML">
+            HTML
+          </a>
+          <a style="border-radius: 3px; margin-right: .5em"
+            class="tag-javascript tag-list__item "
+            href="/tag/javascript/" title="javascript" aria-label="javascript">
+            javascript
+          </a>
+          <a style="border-radius: 3px; margin-right: .5em"
+            class="tag-css tag-list__item "
+            href="/tag/css/" title="CSS" aria-label="CSS">
+            CSS
+          </a>
+          <a style="border-radius: 3px; margin-right: .5em"
+            class="tag-java tag-list__item "
+            href="/tag/java/" title="java" aria-label="java">
+            java
+          </a>
+          <a style="border-radius: 3px; margin-right: .5em"
+            class="tag-python tag-list__item "
+            href="/tag/python/" title="python" aria-label="python">
+            python
+          </a>
+          <a style="border-radius: 3px; margin-right: .5em"
+            class="tag-c tag-list__item "
+            href="/tag/c/" title="C++" aria-label="C++">
+            C++
+          </a>
+          <a style="border-radius: 3px; margin-right: .5em"
+            class="tag-php tag-list__item "
+            href="/tag/php/" title="PHP" aria-label="PHP">
+            PHP
+          </a>
+          <a style="border-radius: 3px; margin-right: .5em"
+            class="tag-node-js tag-list__item "
+            href="/tag/node-js/" title="Node.JS" aria-label="Node.JS">
+            Node.JS
+          </a>
+          <a style="border-radius: 3px; margin-right: .5em"
+            class="tag-freecodecamp tag-list__item "
+            href="/tag/freecodecamp/" title="freeCodeCamp" aria-label="freeCodeCamp">
+            freeCodeCamp
+          </a>
+          <a style="border-radius: 3px; margin-right: .5em"
+            class="tag-devdocs tag-list__item "
+            href="/tag/devdocs/" title="DevDocs" aria-label="DevDocs">
+            DevDocs
+          </a>
+          <a style="border-radius: 3px; margin-right: .5em"
+            class="tag-codecademy tag-list__item "
+            href="/tag/codecademy/" title="Codecademy" aria-label="Codecademy">
+            Codecademy
+          </a>
+          <a style="border-radius: 3px; margin-right: .5em"
+            class="tag-roadmap tag-list__item "
+            href="/tag/roadmap/" title="Roadmap" aria-label="Roadmap">
+            Roadmap
+          </a>
+          <a style="border-radius: 3px; margin-right: .5em"
+            class="tag-mozilla-developer-network tag-list__item "
+            href="/tag/mozilla-developer-network/" title="Mozilla Developer Network" aria-label="Mozilla Developer Network">
+            Mozilla Developer Network
+          </a>
+          <a style="border-radius: 3px; margin-right: .5em"
+            class="tag-geeksforgeeks tag-list__item "
+            href="/tag/geeksforgeeks/" title="geeksforgeeks" aria-label="geeksforgeeks">
+            geeksforgeeks
+          </a>
+          <a style="border-radius: 3px; margin-right: .5em"
+            class="tag-w3schools tag-list__item "
+            href="/tag/w3schools/" title="W3Schools" aria-label="W3Schools">
+            W3Schools
+          </a>
+          <a style="border-radius: 3px; margin-right: .5em"
+            class="tag-odin tag-list__item "
+            href="/tag/odin/" title="Odin" aria-label="Odin">
+            Odin
+          </a>
+          <a style="border-radius: 3px; margin-right: .5em"
+            class="tag-codepen tag-list__item "
+            href="/tag/codepen/" title="Codepen" aria-label="Codepen">
+            Codepen
+          </a>
+          <a style="border-radius: 3px; margin-right: .5em"
+            class="tag-udemy tag-list__item "
+            href="/tag/udemy/" title="udemy" aria-label="udemy">
+            udemy
+          </a>
+          <a style="border-radius: 3px; margin-right: .5em"
+            class="tag-youtube-2 tag-list__item "
+            href="/tag/youtube-2/" title="youtube" aria-label="youtube">
+            youtube
+          </a>
+        </div>
+
+       
+
+      </article>
+
+
+
+      <div class="content-wrap">
+        <div class="post-authors p flex flex-wrap bg-default">
+          <div class="section__title text-acc-3 m-b-sm">Published by</div>
+          <span class="special-delimiter"></span>
+
+                  <div class="author_grid">
+          <div class="card author-card author-prakash no-img" data-type="post-mini">
+    <a class="author-card__media flex flex-cc" href="/author/prakash/">
+    <span class="name-letter">Prakash Mishra</span>
+  </a>
+
+  <div class="author-card__content flex-1 flex flex-col text-acc-1 content-center">
+      <div class="author-card__name fw-600 text-lg m-b-xs"><a href="/author/prakash/">Prakash Mishra</a></div>
+    
+  </div>
+</div>
+          <div class="card author-card author-atish" data-type="post-mini">
+    <a class="author-card__media flex flex-cc" href="/author/atish/">
+      <img class="lazyload author-card__img is-round z-index-1 has-shadow m-b-0" 
+        data-srcset="https://static.startuptalky.com/2022/09/Untitled-design-1.jpg 300w,
+            https://static.startuptalky.com/2022/09/Untitled-design-1.jpg 600w"
+        srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+        data-sizes="auto"
+        data-src="https://static.startuptalky.com/2022/09/Untitled-design-1.jpg"
+        src="https://static.startuptalky.com/2022/09/Untitled-design-1.jpg"
+        alt="Atish Ranjan Das"
+      />
+    
+  </a>
+
+  <div class="author-card__content flex-1 flex flex-col text-acc-1 content-center">
+      <div class="author-card__name fw-600 text-lg m-b-xs"><a href="/author/atish/">Atish Ranjan Das</a></div>
+    
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="col-xs-12 col-lg-4">
+    <aside class="sidebar">
+  <div class="sidebar__section p-xs bg-gradient shadow">
+    <div class="sidebar__subscribe bg-default">
+      <h4 class="text-center text-acc-1">StartupTalky Newsletter</h4>
+      <div class="m-b text-acc-3">Get the latest insights directly to your inbox!</div>
+      <form class="subscribe-form flex flex-col flex-cc" 
+  data-members-form="subscribe">
+  <div class="subscribe-box w-100">
+    <input data-members-email  type="email" 
+      autocomplete="off" placeholder="Your email address" 
+      aria-labelledby="form-input-label" required/> 
+    <button class="btn btn--brand w-100 p" type="submit">
+      Subscribe
+    </button>
+  </div>
+  <a tabindex="0" class="notify notify-success js-notify-close">
+    <div class="container wrapper flex flex-cc">
+      <div class="notify__msg flex-1">Great! Check your inbox and click the link.</div> 
+      <span class="notify__close"><i class="icon icon-x icon--xs">
+  <svg class="icon__svg">
+    <use xlink:href="/assets/icons/feather-sprite.svg?v=0337832957#x"></use>
+  </svg>
+</i></span>
+    </div>
+  </a>
+  <a tabindex="0" class="notify notify-error js-notify-close">
+    <div class="container wrapper flex flex-cc">
+      <div class="notify__msg flex-1">Sorry, something went wrong. Please try again.</div> 
+      <span class="notify__close"><i class="icon icon-x icon--xs">
+  <svg class="icon__svg">
+    <use xlink:href="/assets/icons/feather-sprite.svg?v=0337832957#x"></use>
+  </svg>
+</i></span>
+    </div>
+  </a>
+</form>    </div>
+  </div>
+  
+
+<!-- Sidebar Ad -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6079861242160523"
+     crossorigin="anonymous"></script>
+<!-- Sidebar Vertical -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6079861242160523"
+     data-ad-slot="2084617561"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <div class="sidebar__section shadow">
+    <div class="section__title">Latest posts</div>
+    <span class="special-delimiter m-t m-b"></span>
+    <article class="sidebar-story">
+      <h6 class="sidebar-story__title">
+        <a href="/falguni-nayar-success-story/">Banker to Self-Made Billionaire:  Falguni Nayar&#x27;s Remarkable Journey</a>
+      </h6>
+      <a href="/falguni-nayar-success-story/" class="sidebar-story__media m-l">
+        <img class="lazyload" data-sizes="auto" data-src="https://static.startuptalky.com/2023/10/Falguni-Nayar-Founder-CEO-Nykaa-Startuptalky-1.jpg"
+          src="https://static.startuptalky.com/2023/10/Falguni-Nayar-Founder-CEO-Nykaa-Startuptalky-1.jpg" alt="Banker to Self-Made Billionaire:  Falguni Nayar&#x27;s Remarkable Journey" />
+      </a>
+    </article>
+    <article class="sidebar-story">
+      <h6 class="sidebar-story__title">
+        <a href="/plan-profitable-bfcm-promotion/">How to Plan a Profitable Black Friday Cyber Monday Promotion</a>
+      </h6>
+      <a href="/plan-profitable-bfcm-promotion/" class="sidebar-story__media m-l">
+        <img class="lazyload" data-sizes="auto" data-src="https://static.startuptalky.com/2023/10/BFCM-Promotions-Startuptalky.jpg"
+          src="https://static.startuptalky.com/2023/10/BFCM-Promotions-Startuptalky.jpg" alt="How to Plan a Profitable Black Friday Cyber Monday Promotion" />
+      </a>
+    </article>
+    <article class="sidebar-story">
+      <h6 class="sidebar-story__title">
+        <a href="/top-youtubers-india/">Top YouTubers of India 2023</a>
+      </h6>
+      <a href="/top-youtubers-india/" class="sidebar-story__media m-l">
+        <img class="lazyload" data-sizes="auto" data-src="https://static.startuptalky.com/2023/10/Top-YouTubers-India-2023-Startuptalky.jpg"
+          src="https://static.startuptalky.com/2023/10/Top-YouTubers-India-2023-Startuptalky.jpg" alt="Top YouTubers of India 2023" />
+      </a>
+    </article>
+  </div>
+
+
+
+  <div class="sidebar__section shadow">
+    <div class="section__title">Featured posts</div>
+    <span class="special-delimiter m-t m-b"></span>
+    <article class="sidebar-story">
+      <h6 class="sidebar-story__title">
+        <a href="/onecard-success-story/">The Success Story of OneCard: How it is giving India the Smartest Metal Credit Card</a>
+      </h6>
+      <a href="/onecard-success-story/" class="sidebar-story__media m-l">
+        <img class="lazyload" data-sizes="auto" data-src="https://static.startuptalky.com/2023/10/one-card--success-story-startuptalky.jpg"
+          src="https://static.startuptalky.com/2023/10/one-card--success-story-startuptalky.jpg" alt="The Success Story of OneCard: How it is giving India the Smartest Metal Credit Card" />
+      </a>
+    </article>
+    <article class="sidebar-story">
+      <h6 class="sidebar-story__title">
+        <a href="/roposo-success-story/">Roposo - A Platform to Express and Explore your Passion for Fashion!</a>
+      </h6>
+      <a href="/roposo-success-story/" class="sidebar-story__media m-l">
+        <img class="lazyload" data-sizes="auto" data-src="https://static.startuptalky.com/2023/09/ROPOSO-Suucess-story-startuptalky.jpg"
+          src="https://static.startuptalky.com/2023/09/ROPOSO-Suucess-story-startuptalky.jpg" alt="Roposo - A Platform to Express and Explore your Passion for Fashion!" />
+      </a>
+    </article>
+    <article class="sidebar-story">
+      <h6 class="sidebar-story__title">
+        <a href="/anisha-singh-founder-mydala-she-capital/">Anisha Singh - Founder Of Mydala And She Capital</a>
+      </h6>
+      <a href="/anisha-singh-founder-mydala-she-capital/" class="sidebar-story__media m-l">
+        <img class="lazyload" data-sizes="auto" data-src="https://static.startuptalky.com/2021/01/Anisha-Singh-Mydala--She-Capital_Startuptalky.jpg"
+          src="https://static.startuptalky.com/2021/01/Anisha-Singh-Mydala--She-Capital_Startuptalky.jpg" alt="Anisha Singh - Founder Of Mydala And She Capital" />
+      </a>
+    </article>
+  </div>
+
+
+  <div class="sidebar__section shadow">
+    <div class="section__title">Explore topics</div>
+    <span class="special-delimiter m-t m-b"></span>
+    <div class="tag-list flex flex-wrap">
+      <a class="tag-insights tag-list__item m-b-sm m-r-sm"
+        href="/tag/insights/" title="🔍Insights" aria-label="🔍Insights">
+        🔍Insights
+      </a>
+      <a class="tag-successful-company-profiles tag-list__item m-b-sm m-r-sm"
+        href="/tag/successful-company-profiles/" title="📄Company Profiles" aria-label="📄Company Profiles">
+        📄Company Profiles
+      </a>
+      <a class="tag-collections tag-list__item m-b-sm m-r-sm"
+        href="/tag/collections/" title="Collections 🗒️" aria-label="Collections 🗒️">
+        Collections 🗒️
+      </a>
+      <a class="tag-learning tag-list__item m-b-sm m-r-sm"
+        href="/tag/learning/" title="Learning  📖" aria-label="Learning  📖">
+        Learning  📖
+      </a>
+      <a class="tag-news tag-list__item m-b-sm m-r-sm"
+        href="/tag/news/" title="News 📰" aria-label="News 📰">
+        News 📰
+      </a>
+      <a class="tag-startuptalkers tag-list__item m-b-sm m-r-sm"
+        href="/tag/startuptalkers/" title="🧑StartupTalkers" aria-label="🧑StartupTalkers">
+        🧑StartupTalkers
+      </a>
+      <a class="tag-saas tag-list__item m-b-sm m-r-sm"
+        href="/tag/saas/" title="SaaS 💻" aria-label="SaaS 💻">
+        SaaS 💻
+      </a>
+      <a class="tag-opinions tag-list__item m-b-sm m-r-sm"
+        href="/tag/opinions/" title="Opinions ✍️" aria-label="Opinions ✍️">
+        Opinions ✍️
+      </a>
+      <a class="tag-ecommerce tag-list__item m-b-sm m-r-sm"
+        href="/tag/ecommerce/" title="Ecommerce 🛒" aria-label="Ecommerce 🛒">
+        Ecommerce 🛒
+      </a>
+      <a class="tag-business-model tag-list__item m-b-sm m-r-sm"
+        href="/tag/business-model/" title="Business Model" aria-label="Business Model">
+        Business Model
+      </a>
+      <a class="tag-marketing tag-list__item m-b-sm m-r-sm"
+        href="/tag/marketing/" title="Marketing 📢" aria-label="Marketing 📢">
+        Marketing 📢
+      </a>
+      <a class="tag-digital-marketing tag-list__item m-b-sm m-r-sm"
+        href="/tag/digital-marketing/" title="digital marketing" aria-label="digital marketing">
+        digital marketing
+      </a>
+      <a class="tag-revenue-model tag-list__item m-b-sm m-r-sm"
+        href="/tag/revenue-model/" title="Revenue model" aria-label="Revenue model">
+        Revenue model
+      </a>
+      <a class="tag-covid-19 tag-list__item m-b-sm m-r-sm"
+        href="/tag/covid-19/" title="Covid-19" aria-label="Covid-19">
+        Covid-19
+      </a>
+      <a class="tag-business tag-list__item m-b-sm m-r-sm"
+        href="/tag/business/" title="business" aria-label="business">
+        business
+      </a>
+      <a class="tag-advertisements tag-list__item m-b-sm m-r-sm"
+        href="/tag/advertisements/" title="Advertisements" aria-label="Advertisements">
+        Advertisements
+      </a>
+      <a class="tag-marketing-strategy tag-list__item m-b-sm m-r-sm"
+        href="/tag/marketing-strategy/" title="marketing strategy" aria-label="marketing strategy">
+        marketing strategy
+      </a>
+      <a class="tag-amazon tag-list__item m-b-sm m-r-sm"
+        href="/tag/amazon/" title="amazon" aria-label="amazon">
+        amazon
+      </a>
+      <a class="tag-fintech tag-list__item m-b-sm m-r-sm"
+        href="/tag/fintech/" title="fintech" aria-label="fintech">
+        fintech
+      </a>
+      <a class="tag-artificial-intelligence tag-list__item m-b-sm m-r-sm"
+        href="/tag/artificial-intelligence/" title="artificial intelligence" aria-label="artificial intelligence">
+        artificial intelligence
+      </a>
+    </div>
+  </div>
+
+</aside>  </div>
+  </div>
+  </div>
+
+  <div class="container wrapper">
+      <div class="related-posts m-t-lg">
+    <div class="section__title m-b">You might also like</div>
+    
+    <div class="row post-feed">
+        <div class="col-xs-12 col-md-6 col-lg-4 m-b-lg">
+          <article
+  class="card  post-card post tag-collections tag-indian-youtubers tag-top-youtubers-india tag-carryminati tag-total-gaming tag-bhuvan-bam tag-sandeep-maheshwari tag-gaurav-chaudhary tag-ashish-chanchlani tag-amit-bhadana tag-dr-vivek-bindra tag-technical-guruji tag-round2hell tag-mr-indian-hacker tag-techno-gamerz h-100 js-post-card">
+
+
+  <div class="post-card__content ">
+    <div class="tag-list flex flex-wrap m-b-sm">
+      <a class="tag-collections tag-list__item"
+        href="/tag/collections/" aria-label="Collections 🗒️">
+        Collections 🗒️
+      </a>
+    </div>
+
+    <h2 class="post-card__title">
+      <a href="/top-youtubers-india/" aria-label="Top YouTubers of India 2023">Top YouTubers of India 2023</a>
+    </h2>
+
+
+
+    <div class="flex-1"></div>
+
+    <div class="post-card__ftr">
+      <time datetime="2023-10-26" class="post-card__date flex-1">
+        Oct 26, 2023
+      </time>
+
+      <div class="author-mini flex items-center">
+        <a href="/author/alan/" class="author-mini__item has-img  nr-1"
+          title="Alan Joseph" aria-label="Alan Joseph">
+          <span class="author-mini__tooltip">Alan Joseph</span>
+          <img width="30px" height="30px" class="lazyload author-mini__img" data-sizes="auto"
+            data-src="https://static.startuptalky.com/2022/11/alan-joseph-StartupTalky-writer.jpg" src="https://static.startuptalky.com/2022/11/alan-joseph-StartupTalky-writer.jpg"
+            alt="Alan Joseph" />
+        </a>
+        <a href="/author/apoorva-bajj/" class="author-mini__item has-img  nr-2"
+          title="Apoorva Bajj" aria-label="Apoorva Bajj">
+          <span class="author-mini__tooltip">Apoorva Bajj</span>
+          <img width="30px" height="30px" class="lazyload author-mini__img" data-sizes="auto"
+            data-src="https://static.startuptalky.com/2023/09/Apoorva-StartupTalky-publisher.jpg" src="https://static.startuptalky.com/2023/09/Apoorva-StartupTalky-publisher.jpg"
+            alt="Apoorva Bajj" />
+        </a>
+      </div>
+    </div>
+  </div>
+
+</article>        </div>
+        <div class="col-xs-12 col-md-6 col-lg-4 m-b-lg">
+          <article
+  class="card  post-card post tag-collections tag-saas tag-saas-deals tag-black-friday-2022 tag-wordpress-deals tag-black-friday tag-lifetimedeal tag-deals tag-lifetime-deal tag-life-time-deals tag-saas-tools tag-web-hosting-for-startups tag-appsumo-deals tag-black-friday-2020 tag-hostinger tag-affiliate tag-best-website-designing-tools tag-cyber-monday tag-black-friday-2021 tag-bluehost tag-marketing-tool h-100 js-post-card">
+
+
+  <div class="post-card__content ">
+    <div class="tag-list flex flex-wrap m-b-sm">
+      <a class="tag-collections tag-list__item"
+        href="/tag/collections/" aria-label="Collections 🗒️">
+        Collections 🗒️
+      </a>
+    </div>
+
+    <h2 class="post-card__title">
+      <a href="/black-friday-deals-saas-wordpress-shopify/" aria-label="List of Exclusive Black Friday SaaS Deals | Black Friday and Cyber Monday Software Deals 2023">List of Exclusive Black Friday SaaS Deals | Black Friday and Cyber Monday Software Deals 2023</a>
+    </h2>
+
+
+
+    <div class="flex-1"></div>
+
+    <div class="post-card__ftr">
+      <time datetime="2023-10-20" class="post-card__date flex-1">
+        Oct 20, 2023
+      </time>
+
+      <div class="author-mini flex items-center">
+        <a href="/author/startuptalky/" class="author-mini__item has-img  nr-1"
+          title="Shubham Kumar" aria-label="Shubham Kumar">
+          <span class="author-mini__tooltip">Shubham Kumar</span>
+          <img width="30px" height="30px" class="lazyload author-mini__img" data-sizes="auto"
+            data-src="https://static.startuptalky.com/2020/08/11053658_769131729860891_87064.jpg" src="https://static.startuptalky.com/2020/08/11053658_769131729860891_87064.jpg"
+            alt="Shubham Kumar" />
+        </a>
+        <a href="/author/apoorva-bajj/" class="author-mini__item has-img  nr-2"
+          title="Apoorva Bajj" aria-label="Apoorva Bajj">
+          <span class="author-mini__tooltip">Apoorva Bajj</span>
+          <img width="30px" height="30px" class="lazyload author-mini__img" data-sizes="auto"
+            data-src="https://static.startuptalky.com/2023/09/Apoorva-StartupTalky-publisher.jpg" src="https://static.startuptalky.com/2023/09/Apoorva-StartupTalky-publisher.jpg"
+            alt="Apoorva Bajj" />
+        </a>
+      </div>
+    </div>
+  </div>
+
+</article>        </div>
+        <div class="col-xs-12 col-md-6 col-lg-4 m-b-lg">
+          <article
+  class="card  post-card post tag-collections tag-semiconductor tag-manufacturers tag-manufacturing tag-manufacturing-business tag-amd tag-samsung-electronics tag-nvidia tag-taiwan-semiconductor-manufacturing-co-ltd tag-broadcom tag-asml tag-intel tag-texas-instruments tag-qualcomm tag-applied-materials tag-analog-devices tag-lam-research tag-micron-technology tag-synopsys tag-tokyo-electron h-100 js-post-card">
+
+
+  <div class="post-card__content ">
+    <div class="tag-list flex flex-wrap m-b-sm">
+      <a class="tag-collections tag-list__item"
+        href="/tag/collections/" aria-label="Collections 🗒️">
+        Collections 🗒️
+      </a>
+    </div>
+
+    <h2 class="post-card__title">
+      <a href="/top-semiconductor-companies-world/" aria-label="Top 15 Biggest Semiconductor Companies in the World">Top 15 Biggest Semiconductor Companies in the World</a>
+    </h2>
+
+
+
+    <div class="flex-1"></div>
+
+    <div class="post-card__ftr">
+      <time datetime="2023-10-19" class="post-card__date flex-1">
+        Oct 19, 2023
+      </time>
+
+      <div class="author-mini flex items-center">
+        <a href="/author/pratyusha/" class="author-mini__item has-img  nr-1"
+          title="Pratyusha Srivastava" aria-label="Pratyusha Srivastava">
+          <span class="author-mini__tooltip">Pratyusha Srivastava</span>
+          <img width="30px" height="30px" class="lazyload author-mini__img" data-sizes="auto"
+            data-src="https://static.startuptalky.com/2022/09/png_20220924_233859_0000.jpg" src="https://static.startuptalky.com/2022/09/png_20220924_233859_0000.jpg"
+            alt="Pratyusha Srivastava" />
+        </a>
+        <a href="/author/apoorva-bajj/" class="author-mini__item has-img  nr-2"
+          title="Apoorva Bajj" aria-label="Apoorva Bajj">
+          <span class="author-mini__tooltip">Apoorva Bajj</span>
+          <img width="30px" height="30px" class="lazyload author-mini__img" data-sizes="auto"
+            data-src="https://static.startuptalky.com/2023/09/Apoorva-StartupTalky-publisher.jpg" src="https://static.startuptalky.com/2023/09/Apoorva-StartupTalky-publisher.jpg"
+            alt="Apoorva Bajj" />
+        </a>
+      </div>
+    </div>
+  </div>
+
+</article>        </div>
+    </div>
+  </div>
+  </div>
+
+  </main>
+
+
+
+  
+  <center>
+  <!-- Multiplex Ad Above Footer -->
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6079861242160523"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-6079861242160523"
+     data-ad-slot="5592829763"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</center>
+  <footer class="footer">
+  <div class="container wrapper">
+
+    <div class="footer__top p-t-lg p-b border-bottom-1 text-acc-1">
+      <div class="row">
+        <div class="col-xs-12 col-md-4 m-b-sm">
+          <div class="footer__title">StartupTalky</div>
+          <div class="m-b text-acc-3">StartupTalky is top startup media platform for latest startup news, ideas, industry research and reports, inspiring startup stories.</div>
+          <div class="social flex">
+  <a class="social__item"
+     href="https://www.facebook.com/startuptalky/" target="_blank" title="Facebook"
+     aria-label="Facebook" rel="noreferrer">
+    <i class="icon icon-facebook icon--sm">
+  <svg class="icon__svg">
+    <use xlink:href="/assets/icons/feather-sprite.svg?v=0337832957#facebook"></use>
+  </svg>
+</i>  </a>
+  <a class="social__item"
+     href="https://twitter.com/StartupTalky" target="_blank" title="Twitter"
+     aria-label="Twitter" rel="noreferrer">
+    <i class="icon icon-twitter icon--sm">
+  <svg class="icon__svg">
+    <use xlink:href="/assets/icons/feather-sprite.svg?v=0337832957#twitter"></use>
+  </svg>
+</i>  </a>
+  <a class="social__item"
+     href="https://www.instagram.com/startup_talky/" target="_blank" title="Instagram"
+     aria-label="Instagram" rel="noreferrer">
+    <i class="icon icon-instagram icon--sm">
+  <svg class="icon__svg">
+    <use xlink:href="/assets/icons/feather-sprite.svg?v=0337832957#instagram"></use>
+  </svg>
+</i>  </a>
+  <a class="social__item"
+     href="https://www.linkedin.com/company/startuptalky" target="_blank" title="Linkedin"
+     aria-label="Linkedin" rel="noreferrer">
+    <i class="icon icon-linkedin icon--sm">
+  <svg class="icon__svg">
+    <use xlink:href="/assets/icons/feather-sprite.svg?v=0337832957#linkedin"></use>
+  </svg>
+</i>  </a>
+</div>
+        </div>
+        <div class="col-xs-12 col-md-2 m-b-sm">
+        </div>
+        <div class="col-xs-12 col-md-2 m-b-sm">
+          <div class="footer__title">Navigation</div>
+          
+        </div>
+        <div class="col-xs-12 col-md-2 m-b-sm">
+            <div class="footer__title">Quick links</div>
+            <ul class="nav">
+    <li class="nav-contact-us"><a href="https://startuptalky.com/contact-us/">Contact us</a></li>
+    <li class="nav-career"><a href="https://startuptalky.com/join-us/">Career</a></li>
+    <li class="nav-privacy-policy"><a href="https://startuptalky.com/privacy-policy/">Privacy Policy</a></li>
+    <li class="nav-copyright"><a href="https://startuptalky.com/copyright/">Copyright</a></li>
+    <li class="nav-disclaimer"><a href="https://startuptalky.com/affiliate-disclaimer/">Disclaimer</a></li>
+    <li class="nav-advertise-with-us"><a href="https://startuptalky.com/advertise/">Advertise with us</a></li>
+</ul>
+
+        </div>
+        <div class="col-xs-12 col-md-2 m-b-sm">
+          <div class="footer__title">Tags</div>
+            <div class="footer__tags text-acc-3 flex flex-col m-b">
+                <a href="/tag/insights/">🔍Insights</a>
+                <a href="/tag/successful-company-profiles/">📄Company Profiles</a>
+                <a href="/tag/collections/">Collections 🗒️</a>
+                <a href="/tag/learning/">Learning  📖</a>
+                <a href="/tag/news/">News 📰</a>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom text-center">
+      <span>&copy;2023&nbsp;<a href="https://startuptalky.com">StartupTalky</a>.</span>
+    </div>
+  </div>
+</footer>
+
+  <button class="btn-toggle-round scroll-top js-scroll-top"
+  type="button" title="Scroll to top" aria-label="Scroll to top">
+  <svg class="progress-circle" width="100%" height="100%" viewBox="-1 -1 102 102">
+    <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+  </svg>
+  <i class="icon icon-arrow-up">
+  <svg class="icon__svg">
+    <use xlink:href="/assets/icons/feather-sprite.svg?v=0337832957#arrow-up"></use>
+  </svg>
+</i></button>
+
+
+  
+
+  <div class="notifications">
+  <a tabindex="0" class="notify notify-signup js-notify-close" 
+    href="javascript:;" data-class="signup-success">
+    <div class="container wrapper flex flex-cc">
+      <div class="notify__msg flex-1">Great! Next, complete checkout for full access to StartupTalky.</div> 
+      <span class="notify__close"><i class="icon icon-x icon--xs">
+  <svg class="icon__svg">
+    <use xlink:href="/assets/icons/feather-sprite.svg?v=0337832957#x"></use>
+  </svg>
+</i></span>
+    </div>
+  </a>
+
+  <a tabindex="0" class="notify notify-signin js-notify-close" 
+    href="javascript:;" data-class="signin-success">
+    <div class="container wrapper flex flex-cc">
+      <div class="notify__msg flex-1">Welcome back! You&#x27;ve successfully signed in.</div> 
+      <span class="notify__close"><i class="icon icon-x icon--xs">
+  <svg class="icon__svg">
+    <use xlink:href="/assets/icons/feather-sprite.svg?v=0337832957#x"></use>
+  </svg>
+</i></span>
+    </div>
+  </a>
+
+  <a tabindex="0" class="notify notify-subscribe js-notify-close" 
+    href="javascript:;" data-class="subscribe-success">
+    <div class="container wrapper flex flex-cc">
+      <div class="notify__msg flex-1">You&#x27;ve successfully subscribed to StartupTalky.</div> 
+      <span class="notify__close"><i class="icon icon-x icon--xs">
+  <svg class="icon__svg">
+    <use xlink:href="/assets/icons/feather-sprite.svg?v=0337832957#x"></use>
+  </svg>
+</i></span>
+    </div>
+  </a>
+
+  <a tabindex="0" class="notify notify-checkout js-notify-close" 
+    href="javascript:;" data-class="checkout-success">
+    <div class="container wrapper flex flex-cc">
+      <div class="notify__msg flex-1">Success! Your account is fully activated, you now have access to all content.</div> 
+      <span class="notify__close"><i class="icon icon-x icon--xs">
+  <svg class="icon__svg">
+    <use xlink:href="/assets/icons/feather-sprite.svg?v=0337832957#x"></use>
+  </svg>
+</i></span>
+    </div>
+  </a>
+
+  <a tabindex="0" class="notify notify-billing-success js-notify-close" 
+    href="javascript:;" data-class="billing-success">
+    <div class="container wrapper flex flex-cc">
+      <div class="notify__msg flex-1">Success! Your billing info has been updated.</div> 
+      <span class="notify__close"><i class="icon icon-x icon--xs">
+  <svg class="icon__svg">
+    <use xlink:href="/assets/icons/feather-sprite.svg?v=0337832957#x"></use>
+  </svg>
+</i></span>
+    </div>
+  </a>
+
+  <a tabindex="0" class="notify notify-billing-cancel js-notify-close" 
+    href="javascript:;" data-class="billing-cancel">
+    <div class="container wrapper flex flex-cc">
+      <div class="notify__msg flex-1">Your billing was not updated.</div> 
+      <span class="notify__close"><i class="icon icon-x icon--xs">
+  <svg class="icon__svg">
+    <use xlink:href="/assets/icons/feather-sprite.svg?v=0337832957#x"></use>
+  </svg>
+</i></span>
+    </div>
+  </a>
+</div>
+
+
+  <script>
+    if (CONFIG.ENABLE_PWA && 'serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('/sw.js');
+      });
+    }
+  </script>
+
+    <script>
+    // Check if current post is bookmarked
+    const bookmarkBtn = document.querySelector('.js-handle-bookmark');
+    if (bookmarkBtn) {
+      bookmarkBtn.onclick = function(event) {
+        handleBookmark(event);
+      }
+    }
+    let bookmarks = JSON.parse(localStorage.getItem('bookmarks')) || [];
+    let bookmarked = bookmarks.some(function(i) { return i.id.includes('6295d281ccbee051b70ed372')});
+    bookmarked ? bookmarkBtn.classList.add('is-saved') : '';
+
+    /** 
+    * Handle bookmark
+    * @id - Post ID
+    * @url - Post url
+    * @title - Post title
+    */ 
+    const handleBookmark = function(event) {
+      // Save input values in an object
+      let bookmarkObject = {
+        id: event.currentTarget.getAttribute('data-id'),
+        url: event.currentTarget.getAttribute('data-url'),
+        title: event.currentTarget.getAttribute('data-title')
+      }
+
+      if (bookmarked) { 
+        // Remove bookmark
+        const index = bookmarks.findIndex( function(b) { b.id == bookmarkObject.id });
+        bookmarks.splice(index, 1);
+        localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+        localStorage
+        bookmarked = false;
+        bookmarkBtn.classList.remove('is-saved'); 
+        bookmarkBtn.setAttribute('data-label', GLOBAL.REMOVE_BOOKMARK_MSG);   
+      } else { 
+        // Add bookmark
+        bookmarks.push(bookmarkObject);
+        localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
+        bookmarked = true;
+        bookmarkBtn.classList.add('is-saved');  
+        bookmarkBtn.setAttribute('data-label', GLOBAL.ADD_BOOKMARK_MSG);  
+      }
+
+      bookmarkBtn.classList.add('has-tooltip'); 
+      bookmarkBtn.blur();
+
+      setTimeout(function(){
+        bookmarkBtn.classList.remove('has-tooltip');
+      }, 1000); 
+    };    
+    
+    const copyBtn = document.querySelector('.js-copy-link');
+    if (copyBtn) {
+      copyBtn.onclick = function(event) {
+        copyToClipboard(event.currentTarget, event.currentTarget.getAttribute('data-url'));
+      }
+    }
+    
+    /** 
+    * Copy to clipboard
+    * @src - source element
+    * @str - string to copy
+    */ 
+    const copyToClipboard = function(src, str) {
+      const el = document.createElement('textarea');
+      el.value = str;
+      el.setAttribute('readonly', '');
+      el.style.position = 'absolute';
+      el.style.left = '-9999px';
+      document.body.appendChild(el);
+      el.select();
+      document.execCommand('copy');
+      document.body.removeChild(el);
+
+      src.classList.add('has-tooltip');
+      src.setAttribute('data-label', 'Copied!');
+
+      src.onmouseleave = function() { 
+        src.classList.remove('has-tooltip');
+        setTimeout(function(){
+          src.setAttribute('data-label', '');
+        }, 500); 
+      }
+    };
+
+    // General share settings
+    const shareBtns = document.querySelectorAll('.js-share');
+    if (shareBtns) {
+      shareBtns.forEach(shareBtn = function() {
+        shareBtn.onclick = function(event) {
+          socialShare(event.currentTarget.getAttribute('href'));
+        }
+      });
+    }
+
+    /** 
+    * Social Share
+    * @src - source element
+    * @str - string to copy
+    */ 
+    const socialShare = function(href) {
+      window.open(href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=290,width=580');
+      return false;
+    }
+  </script>
+
+  <script>
+    if (CONFIG.ENABLE_COLOR_SCHEME_PICKER && 'content' in document.createElement('template')) {
+      const themeButton = document.querySelector('.js-theme-toggle');
+      themeButton ? themeButton.classList.add('is-visible') : '';
+
+      let colorSchemePicker = document.querySelector('.js-color-scheme-picker');
+      let colorSchemeTemplate = document.querySelector('.js-color-scheme-template');
+
+      COLOR_SCHEMES.map(function(theme) { 
+        var colorSchemeBtn = colorSchemeTemplate.content.cloneNode(true).querySelector('button');
+        colorSchemeBtn.setAttribute('data-color-scheme', theme.id);
+        colorSchemeBtn.querySelector('.color-scheme__name').textContent = theme.name;
+        colorSchemePicker.appendChild(colorSchemeBtn);
+      }).join(' ')
+    } 
+
+    const colorSchemeBtns = document.querySelectorAll('.js-color-scheme');
+    colorSchemeBtns.forEach(function(colorSchemeBtn) {
+      colorSchemeBtn.onclick = function(event) {
+        setColorScheme(event.currentTarget.getAttribute('data-color-scheme'));
+      }
+    })
+  </script>
+
+  <script>
+    const scrollTop = document.querySelector('.js-scroll-top');
+
+    if (scrollTop && CONFIG.ENABLE_SCROLL_TO_TOP) {
+      const progressPath = document.querySelector('.scroll-top path');
+      const pathLength = progressPath.getTotalLength();
+      progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
+      progressPath.style.strokeDasharray = `${pathLength} ${pathLength}`;
+      progressPath.style.strokeDashoffset = pathLength;
+      progressPath.getBoundingClientRect();
+      progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';		
+      const updateProgress = function() {
+        const scroll = window.scrollY || window.scrollTop || document.documentElement.scrollTop;
+    
+        const docHeight = Math.max(
+          document.body.scrollHeight, document.documentElement.scrollHeight,
+          document.body.offsetHeight, document.documentElement.offsetHeight,
+          document.body.clientHeight, document.documentElement.clientHeight
+        );
+    
+        const windowHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+    
+        const height = docHeight - windowHeight;
+        var progress = pathLength - (scroll * pathLength / height);
+        progressPath.style.strokeDashoffset = progress;
+      }
+    
+      updateProgress();
+      const offset = 60;
+
+      window.addEventListener('scroll', function(event) {
+        updateProgress();
+        
+        //Scroll back to top
+        const scrollPos = window.scrollY || window.scrollTop || document.getElementsByTagName('html')[0].scrollTop;
+        scrollPos > offset ? scrollTop.classList.add('is-active') : scrollTop.classList.remove('is-active');
+      
+      }, false);
+    }
+  </script>
+
+  <script>
+    // Give the parameter a variable name
+    const action = getParameterByName('action');
+    const stripe = getParameterByName('stripe');
+
+    switch (action) {
+      case 'subscribe':
+        document.body.classList.add('subscribe-success')
+        break;
+      case 'signup': 
+        window.location = '/signup/?action=checkout';
+        break;
+      case 'checkout':
+        document.body.classList.add('signup-success');
+        break;
+      case 'signin':
+        document.body.classList.add('signin-success');
+        break;
+      default:
+        break;
+    }
+
+    switch (stripe) {
+      case 'success':
+        document.body.classList.add('checkout-success');
+        break;
+      case 'billing-update-success':
+        document.body.classList.add('billing-success');
+        break;
+      case 'billing-update-cancel':
+        document.body.classList.add('billing-cancel');
+        break;
+      default:
+        break;
+    }
+
+    /**
+    * Members Parse the URL parameter
+    * @param {string} name - The parameter name
+    * @param {string} url - The URL
+    * @param {string} action - Name of the action
+    */
+    function getParameterByName(name, url) {
+      if (!url) url = window.location.href;
+      name = name.replace(/[\[\]]/g, '\\$&');
+      var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+          results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+    
+    /**
+    * Clean URI
+    */
+    function clearURI() {
+      var uri = window.location.toString();
+      if (uri.indexOf("?") > 0) {
+        var clean_uri = uri.substring(0, uri.indexOf("?"));
+        window.history.replaceState({}, document.title, clean_uri);
+      }
+    }
+  </script>
+
+
+  <script>
+    [...document.querySelectorAll("a")].forEach((cur) => {
+  const { href } = cur;
+  if (href.startsWith("#") || href.startsWith("https://startuptalky.com")) {
+    return;
+  }
+    })
+</script>
+
+
+</body>
+
+</html>
