@@ -19,7 +19,7 @@ const AchievementsCarousel = () => {
     const totalWidth = achievements.length * 350; // Assuming each card is 350px wide
 
     // Animate from the right edge of the container to the left edge
-    tl.fromTo('.cards-container', { x: totalWidth }, { x: -totalWidth, duration: 10, ease: 'linear' });
+    tl.fromTo('.cards-container', { x: totalWidth }, { x: -totalWidth, duration: 30, ease: 'linear' }); // Adjust the duration
 
     return () => {
       tl.kill(); // Kill the animation when component unmounts
@@ -27,10 +27,10 @@ const AchievementsCarousel = () => {
   }, []);
 
   return (
-    <Container maxWidth="md" style={{ overflow: 'hidden' }}>
+    <Container style={{ overflow: 'hidden' }}>
       <Grid container spacing={3} justifyContent="center" style={{ marginBottom: '30px' }} className="cards-container">
         {achievements.map((achievement, index) => (
-          <Grid item key={index} xs={12} sm={6} md={4}>
+          <Grid item key={index} xs={12} sm={6} md={4} style={{ minWidth: '350px' }}>
             <Card style={{ height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', borderRadius: '10px', backgroundColor: index % 2 === 0 ? '#FFD700' : '#FF6347' }}>
               <CardContent>
                 <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '16px' }}>
