@@ -64,10 +64,10 @@ const TestimonialStepper = () => {
           ))}
         </Stepper>
         <div>
-          <Button disabled={activeStep === 0} onClick={handleBack}>
+          <Button sx={{color:'black'}}disabled={activeStep === 0} onClick={handleBack}>
             Back
           </Button>
-          <Button onClick={handleNext}>
+          <Button sx={{color:'black'}}onClick={handleNext}>
             Next
           </Button>
         </div>

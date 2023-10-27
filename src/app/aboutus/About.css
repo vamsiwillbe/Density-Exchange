@@ -34,4 +34,27 @@
       opacity: 1;
     }
   }
+
+  .about-container {
+    text-align: center;
+    color: white;
+  }
+  
+  .text-fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
+  }
+  
+  .slide-in-text {
+    display: inline-block;
+    transform: translateX(-100%);
+    transition: transform 0.5s;
+  }
+  
+  .about-image {
+    width: 100%; /* Adjust image width as needed */
+    max-width: 100%;
+    opacity: 0; /* Initially set opacity to 0 */
+  }
   
