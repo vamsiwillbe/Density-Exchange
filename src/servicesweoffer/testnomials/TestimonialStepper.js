@@ -17,10 +17,10 @@ const stepLabels = [
 ];
 
 const stepImages = [
-  'undraw_Happy_announcement_re_tsm0.png',
-  'undraw_Progress_overview_re_tvcl.png',
-  'undraw_Educator_re_ju47.png',
-  'undraw_Adventure_re_ncqp.png'
+  'undraw_Happy_announcement_re_tsm0-removebg-preview.png',
+  'undraw_Progress_overview_re_tvcl-removebg-preview.png',
+  'undraw_Educator_re_ju47-removebg-preview.png',
+  'undraw_Adventure_re_ncqp-removebg-preview.png'
 ];
 
 const TestimonialStepper = () => {
