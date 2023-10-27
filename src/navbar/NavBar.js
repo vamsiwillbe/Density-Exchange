@@ -5,7 +5,7 @@ import { AppBar, Toolbar, Typography, Button } from '@mui/material';
 
 const Navbar = () => {
   return (
-    <AppBar position="static" sx={{ backgroundColor: '#e0aae5' }}>
+    <AppBar position="static" sx={{ backgroundColor: '#89cff0' }}>
       <Toolbar>
         {/* Logo */}
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>

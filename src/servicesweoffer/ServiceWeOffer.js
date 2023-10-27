@@ -1,6 +1,4 @@
 import React from 'react'
-
-
 import CardOfServices from './CardOfServices'
 import { Typography } from '@mui/material'
 

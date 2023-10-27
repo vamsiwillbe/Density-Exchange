@@ -1,4 +1,3 @@
-// Updated Step 1 label
 import React, { useState } from 'react';
 import { Stepper, Step, StepLabel, Typography, Button, Grid } from '@mui/material';
 import gsap from 'gsap';
@@ -18,10 +17,10 @@ const stepLabels = [
 ];
 
 const stepImages = [
-  'optimization.png',
-  'bestresourse.webp',
-  'progress.png',
-  'opportunities.jpeg'
+  'undraw_Happy_announcement_re_tsm0.png',
+  'undraw_Progress_overview_re_tvcl.png',
+  'undraw_Educator_re_ju47.png',
+  'undraw_Adventure_re_ncqp.png'
 ];
 
 const TestimonialStepper = () => {
@@ -44,49 +43,47 @@ const TestimonialStepper = () => {
   return (
     <>
     <Typography variant="h4" style={{ fontWeight: 'bold', padding: '20px' }}>
-    What people praised of our services  :
-      </Typography>
+    People say about services:
+    </Typography>
 
-    
-      <Grid container style={{ backgroundImage: 'url("stepper.avif")', backgroundSize: 'cover',borderRadius: '30px', }}>
-  <Grid item xs={6} style={{ padding: '20px' }}>
-    <Stepper activeStep={activeStep} orientation="vertical">
-      {testimonials.map((testimonial, index) => (
-        <Step key={index}>
-          <StepLabel>
-            <Typography variant="h5" style={{ fontWeight: 'bold' }}>
-              {stepLabels[index]}
-            </Typography>
-          </StepLabel>
-          <Typography id={`testimonial-${index}`} variant="body2" color="textSecondary" component="div" style={{ opacity: index === 0 ? 1 : 0, transition: 'opacity 0.5s' }}>
-            {/* Make the testimonials bold */}
-            <b>{testimonial}</b>
-          </Typography>
-        </Step>
-      ))}
-    </Stepper>
-    <div>
-      <Button disabled={activeStep === 0} onClick={handleBack}>
-        Back
-      </Button>
-      <Button onClick={handleNext}>
-        Next
-      </Button>
-    </div>
-  </Grid>
-  <Grid item xs={6} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-    <img
-      src={stepImages[activeStep]} // Display different images for each step
-      alt={stepLabels[activeStep]} // Use step label as alt text
-      style={{
-        width: '80%',
-        transform: `rotate(${activeStep * 360}deg)`,
-        transition: 'transform 0.5s'
-      }}
-    />
-  </Grid>
-</Grid>
-
+    <Grid container style={{ backgroundImage: 'url("contactus.jpg")', backgroundSize: 'cover', borderRadius: '30px' }}>
+      <Grid item xs={6} style={{ padding: '20px' }}>
+        <Stepper activeStep={activeStep} orientation="vertical">
+          {testimonials.map((testimonial, index) => (
+            <Step key={index}>
+              <StepLabel style={{ color: 'black' }}> {/* Apply in-line CSS to make the tick symbol blue */}
+                <Typography variant="h5" style={{ fontWeight: 'bold' }}>
+                  {stepLabels[index]}
+                </Typography>
+              </StepLabel>
+              <Typography id={`testimonial-${index}`} variant="body2" color="textSecondary" component="div" style={{ opacity: index === 0 ? 1 : 0, transition: 'opacity 0.5s' }}>
+                {/* Make the testimonials bold */}
+                <b>{testimonial}</b>
+              </Typography>
+            </Step>
+          ))}
+        </Stepper>
+        <div>
+          <Button disabled={activeStep === 0} onClick={handleBack}>
+            Back
+          </Button>
+          <Button onClick={handleNext}>
+            Next
+          </Button>
+        </div>
+      </Grid>
+      <Grid item xs={6} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <img
+          src={stepImages[activeStep]} // Display different images for each step
+          alt={stepLabels[activeStep]} // Use step label as alt text
+          style={{
+            width: '80%',
+            transform: `rotate(${activeStep * 360}deg)`,
+            transition: 'transform 0.5s'
+          }}
+        />
+      </Grid>
+    </Grid>
     </>
   );
 };

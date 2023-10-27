@@ -29,7 +29,7 @@ const AchievementsCarousel = () => {
   return (
     <>
     <Typography variant="h4" style={{ fontWeight: 'bold', padding: '20px' }}>
-       Our Achiments :
+       Achievements:
       </Typography> 
     <Container style={{ overflow: 'hidden' , backgroundImage: 'url("contactus.jpg")',borderRadius: '10px'}}>
       <Grid container spacing={3} justifyContent="center" style={{ backgroundImage: 'url("contactus.jpg")', marginBottom: '30px' }} className="cards-container">
